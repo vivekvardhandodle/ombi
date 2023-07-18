@@ -3,14 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="description" content="Freight-Broker Template">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="keywords" content="Freight-Broker, unica, creative, html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Freight-Broker | Template</title>
+<title>Bright Star</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
 <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
@@ -18,6 +20,10 @@
 <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
 <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
 <link rel="stylesheet" href="css/style.css" type="text/css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Times New Roman', Times, serif}
+</style>
 <script nonce="cf039ebf-9cf8-4fbd-bfdf-87dc823076d7">(function(w,d){!function(a,b,c,d){a[c]=a[c]||{};a[c].executed=[];a.zaraz={deferred:[],listeners:[]};a.zaraz.q=[];a.zaraz._f=function(e){return function(){var f=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:f})}};for(const g of["track","set","debug"])a.zaraz[g]=a.zaraz._f(g);a.zaraz.init=()=>{var h=b.getElementsByTagName(d)[0],i=b.createElement(d),j=b.getElementsByTagName("title")[0];j&&(a[c].t=b.getElementsByTagName("title")[0].text);a[c].x=Math.random();a[c].w=a.screen.width;a[c].h=a.screen.height;a[c].j=a.innerHeight;a[c].e=a.innerWidth;a[c].l=a.location.href;a[c].r=b.referrer;a[c].k=a.screen.colorDepth;a[c].n=b.characterSet;a[c].o=(new Date).getTimezoneOffset();if(a.dataLayer)for(const n of Object.entries(Object.entries(dataLayer).reduce(((o,p)=>({...o[1],...p[1]})),{})))zaraz.set(n[0],n[1],{scope:"page"});a[c].q=[];for(;a.zaraz.q.length;){const q=a.zaraz.q.shift();a[c].q.push(q)}i.defer=!0;for(const r of[localStorage,sessionStorage])Object.keys(r||{}).filter((t=>t.startsWith("_zaraz_"))).forEach((s=>{try{a[c]["z_"+s.slice(7)]=JSON.parse(r.getItem(s))}catch{a[c]["z_"+s.slice(7)]=r.getItem(s)}}));i.referrerPolicy="origin";i.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a[c])));h.parentNode.insertBefore(i,h)};["complete","interactive"].includes(b.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
 <body>
 
@@ -128,6 +134,112 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
 </div>
 </div>
 </div>
+<div style="text-align: center;">
+          <h1 style="text-align: center; padding-top: 4%;">BLUE STAR TRANSPORTATION</h1>
+          <h2 style="text-align: center;">ONLINE RESERVATION</h2>
+          <p style="text-align: center;">Up to 20% Off at Online Booking for Wheelchair/Stretcher Van and Ambulatory Services</p>
+          <button type="button" class="btn btn-success">New Reservation</button>
+          <button type="button" class="btn btn-success">Calculator</button>
+        </div>
+
+        <div class="container-fluid" style="padding-top: 5%; padding-left: 5%; padding-right: 5%;">
+          <h5>SEND A NEW RESERVATION REQUEST</h5>
+          <form action="https://formspree.io/f/xzbqnlgl"
+          method="POST">
+            <div class="form-group" style="padding-top: 1%;">
+              <label for="exampleInput">Main Patient's Name *</label>
+              <input type="text" name="Patient’s name" class="form-control form-control-lg" id="exampleInput" placeholder="Enter the name" required>
+              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group" style="padding-top: 2%;">
+              <label for="exampleInput1">Number of Passangers in Total *</label>
+              <input type="text" name="No.of Passangers" class="form-control form-control-lg" id="exampleInput1" placeholder="" required>
+              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group" style="padding-top: 2% ;">
+              <label for="exampleInput2">Transportation type*</label><br>
+              <select name="Type" class="form-control form-control-lg">
+                <option selected>Choose...</option>
+                <option>One-way</option>
+                <option>Round Trip</option>
+              </select>
+            </div>
+            <div class="form-group" style="padding-top: 2%;">
+              <label for="exampleInputEmail1">Email*</label>
+              <input type="email" name="Email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group" style="padding-top: 2%;">
+              <label for="exampleInput4">Phone Number *</label>
+              <input type="number" name="Phone Number" class="form-control form-control-lg" id="exampleInput4" placeholder="" required>
+              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group" style="padding-top: 2% ;">
+              <label for="exampleInput5">Which facilities do you need during tansportation? *</label>
+              <select name="Facilily Type" class="form-control form-control-lg">
+                <option selected>Wheel Chair</option>
+                <option>Stretcher</option>
+                <option>Wheel Chair & Stretcher</option>
+                <option>None</option>
+              </select>
+            </div>
+            <div class="form-group" style="padding-top: 2%;">
+              <label for="exampleInput6">Pickup time *</label>
+              <input type="text" name="Time of Pickup" class="form-control form-control-lg" id="exampleInput6" placeholder="enter time" required>
+              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group" style="padding-top: 2%;">
+              <label for="exampleInput7">Pickup Address *</label>
+              <input type="text" name="Pickup Address" class="form-control form-control-lg" id="exampleInput7" placeholder="" required>
+              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group" style="padding-top: 2%;">
+              <label for="exampleInput8">DropOff Address *</label>
+              <input type="text" name="DropOff Address" class="form-control form-control-lg" id="exampleInput8" placeholder="" required>
+              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group" style="padding-top: 2%;">
+              <label for="exampleInput9">Patient’s Weight (300lbs+ requires bariatric transport team) *</label>
+              <input type="text" name="Weight" class="form-control form-control-lg" id="exampleInput9" placeholder="" required>
+              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group" style="padding-top: 2% ;">
+              <label for="exampleInput10">Is the patient COVID Positive or has been exposed to the virus in the past 2 weeks? *</label>
+              <select name="COVID:" class="form-control form-control-lg">
+                <option selected>No</option>
+                <option>Yes</option>
+              </select>
+            </div>
+            <div class="form-group" style="padding-top: 2% ;">
+              <label for="exampleInput11">Does passenger need oxygen tank? (Oxygen must be administered by the caregiver) *</label>
+              <select name="Oxygen tank Requirement" class="form-control form-control-lg">
+                <option selected>No</option>
+                <option>Yes</option>
+              </select>
+            </div>
+            <div class="form-group" style="padding-top: 2%;">
+              <label for="exampleInput12">Are there any stairs involved to bring the patient downstairs? If yes, how many? *</label>
+              <input type="text" name="Stairs" class="form-control form-control-lg" id="exampleInput12" placeholder="" required>
+              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>   
+            <div class="form-group" style="padding-top: 2% ;">
+              <label for="exampleInput13">Who is paying for the trip?</label>
+              <select name="Payment by" class="form-control form-control-lg">
+                <option selected>Private Party</option>
+                <option>Facilily</option>
+                <option>other</option>
+              </select>
+            </div>  
+            <br>
+            <p>Comments</p>
+            <div class="form-floating">
+              <textarea class="form-control" name="Comments" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Comments</label>
+            </div> 
+            <p>Please note that by submitting this inquiry form, you agree to our <a href="#">privacy policy</a> and <a href="#">refund policy</a></p>    
+            <button type="submit" class="btn btn-success">Submit</button>         
+          </form>
+        </div>
 <div class="container">
 <div class="row">
 <div class="col-lg-6 col-md-6">
