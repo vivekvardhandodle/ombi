@@ -20,10 +20,7 @@
 <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
 <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
 <link rel="stylesheet" href="css/style.css" type="text/css">
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
-        html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Times New Roman', Times, serif}
-</style>
+
 <script nonce="cf039ebf-9cf8-4fbd-bfdf-87dc823076d7">(function(w,d){!function(a,b,c,d){a[c]=a[c]||{};a[c].executed=[];a.zaraz={deferred:[],listeners:[]};a.zaraz.q=[];a.zaraz._f=function(e){return function(){var f=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:f})}};for(const g of["track","set","debug"])a.zaraz[g]=a.zaraz._f(g);a.zaraz.init=()=>{var h=b.getElementsByTagName(d)[0],i=b.createElement(d),j=b.getElementsByTagName("title")[0];j&&(a[c].t=b.getElementsByTagName("title")[0].text);a[c].x=Math.random();a[c].w=a.screen.width;a[c].h=a.screen.height;a[c].j=a.innerHeight;a[c].e=a.innerWidth;a[c].l=a.location.href;a[c].r=b.referrer;a[c].k=a.screen.colorDepth;a[c].n=b.characterSet;a[c].o=(new Date).getTimezoneOffset();if(a.dataLayer)for(const n of Object.entries(Object.entries(dataLayer).reduce(((o,p)=>({...o[1],...p[1]})),{})))zaraz.set(n[0],n[1],{scope:"page"});a[c].q=[];for(;a.zaraz.q.length;){const q=a.zaraz.q.shift();a[c].q.push(q)}i.defer=!0;for(const r of[localStorage,sessionStorage])Object.keys(r||{}).filter((t=>t.startsWith("_zaraz_"))).forEach((s=>{try{a[c]["z_"+s.slice(7)]=JSON.parse(r.getItem(s))}catch{a[c]["z_"+s.slice(7)]=r.getItem(s)}}));i.referrerPolicy="origin";i.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a[c])));h.parentNode.insertBefore(i,h)};["complete","interactive"].includes(b.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
 <body>
 
@@ -47,12 +44,10 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
 </div>
 <div id="mobile-menu-wrap"></div>
 <ul class="offcanvas__widget">
-<li><span class="icon_phone"></span> +44 20 7930 8205</li>
-<li><span class="icon_pin"></span> 450 Strand, Charing Cross, London</li>
+<li><span class="icon_phone"></span> +1 123 456 7890</li>
+<li><span class="icon_pin"></span> Fairfax, VA</li>
 </ul>
-<div class="offcanvas__auth">
-<a href="#"><span class="icon_profile"></span> Register or Sign in</a>
-</div>
+
 <div class="offcanvas__social">
 <a href="#"><span class="social_facebook"></span></a>
 <a href="#"><span class="social_twitter"></span></a>
@@ -68,13 +63,11 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
 <div class="row">
 <div class="col-lg-9 offset-lg-3">
 <ul class="header__top__widget">
-<li><span class="icon_phone"></span> +44 20 7930 8205</li>
-<li><span class="icon_pin"></span> 450 Strand, Charing Cross, London</li>
+<li><span class="icon_phone"></span> +1 123 456 7890</li>
+<li><span class="icon_pin"></span> Fairfax, VA</li>
 </ul>
 <div class="header__top__right">
-<div class="header__top__right__auth">
-<a href="#"><span class="icon_profile"></span> Register or Sign in</a>
-</div>
+
 <div class="header__top__right__social">
 <a href="#"><span class="social_facebook"></span></a>
 <a href="#"><span class="social_twitter"></span></a>
@@ -89,34 +82,71 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
 <div class="header__options">
 <div class="container">
 <div class="row">
-<div class="col-lg-3">
+<div class="col-lg-2">
 <div class="header__logo">
-<a href="./index.html"><img data-cfsrc="img/logo.png" alt="" style="display:none;visibility:hidden;"><noscript><img src="img/logo.png" alt=""></noscript></a>
+<a href="./index.html"><img data-cfsrc="img/logo.png" alt="" style="height: 50px;"></a>
 </div>
 </div>
-<div class="col-lg-7">
-<nav class="header__menu mobile-menu">
+<div class="col-lg-10" style="padding-left: 100px;">
+    <nav class="header__menu mobile-menu">
 <ul>
-<li><a href="./index.html">Home</a></li>
-<li><a href="./services.html">Services</a></li>
-<li><a href="./about.html">About</a></li>
-<li><a href="#">Pages</a>
+<li class="active"><a href="./index.html">Home</a></li>
+<li><a href="./about.html">About Us</a></li>
+<li><a href="./services.html">Services</a>
 <ul class="dropdown">
-<li><a href="./about.html">About</a></li>
-<li><a href="./services-details.html">Services Details</a></li>
-<li><a href="./blog-details.html">Blog Details</a></li>
+<li><a href="./about.html">Elderly Transportation</a></li>
+<li><a href="./services-details.html">Bed to Bed Transportation</a></li>
+<li><a href="./blog-details.html">Strecher Transport</a></li>
+<li><a href="./about.html">Non-Emergency Medical Transportation</a></li>
+<li><a href="./about.html">Wheelchair Transportation</a></li>
+<li><a href="./about.html">Special Tips</a></li>
+<li><a href="./about.html">Ambulatory Transport</a></li>
+<li><a href="./about.html">Long Distance Transportation</a></li>
+<li><a href="./about.html">Bariatric Transportation</a></li>
+
 </ul>
 </li>
-<li><a href="./blog.html">Blog</a></li>
-<li class="active"><a href="./contact.html">Contacts</a></li>
+<li><a href="#">Testinomials</a>
+<ul class="dropdown">
+<li><a href="./Feedback.html">Feedback Survey</a></li>
+</ul>
+</li>
+<li><a href="./discount.html">Discounts</a></li>
+<li><a href="#">Service Areas</a>
+<ul class="dropdown">
+<li><a href="./about.html">Ashburn VA</a></li>
+<li><a href="./services-details.html">Dumfries VA</a></li>
+<li><a href="./blog-details.html">Fairfax VA</a></li>
+<li><a href="./blog-details.html">Herndon VA</a></li>
+<li><a href="./blog-details.html">Leesburg VA</a></li>
+<li><a href="./blog-details.html">Manassas VA</a></li>
+<li><a href="./blog-details.html">Sterling VA</a></li>
+<li><a href="./blog-details.html">Alexandria VA</a></li>
+<li><a href="./blog-details.html">Annandale VA</a></li>
+<li><a href="./blog-details.html">Arlington VA</a></li>
+<li><a href="./blog-details.html">Bristow VA</a></li>
+<li><a href="./blog-details.html">Burke VA</a></li>
+<li><a href="./blog-details.html">Centreville VA</a></li>
+<li><a href="./blog-details.html">Chantilly VA</a></li>
+<li><a href="./blog-details.html">Falls Church VA</a></li>
+<li><a href="./blog-details.html">Fredrickburg VA</a></li>
+<li><a href="./blog-details.html">Gainesville VA</a></li>
+<li><a href="./blog-details.html">Mc Lean VA</a></li>
+<li><a href="./blog-details.html">Reston VA</a></li>
+<li><a href="./blog-details.html">Springfield</a></li>
+<li><a href="./blog-details.html">Stafford VA</a></li>
+<li><a href="./blog-details.html">Vienna VA</a></li>
+<li><a href="./blog-details.html">Woodbridge VA</a></li>
+</ul>
+</li>
+<!--<li><a href="./fleet.html">Our Fleet</a></li>-->
+<li><a href="./career.html">Career</a></li>
+<li><a href="./contact.html">Booking</a></li>
+<!--<li><a href="#">Brochure</a></li>-->
 </ul>
 </nav>
 </div>
-<div class="col-lg-2">
-<div class="search__option">
-<span class="icon_search search-switch"></span>
-</div>
-</div>
+
 </div>
 </div>
 <div class="canvas__open"><i class="fa fa-bars"></i></div>
@@ -309,14 +339,13 @@ strict attention.</p>
 </div>
 </section>
 
-
 <footer class="footer">
 <div class="container">
 <div class="row">
 <div class="col-lg-4 col-md-6 col-sm-6">
 <div class="footer__about">
 <div class="footer__logo">
-<a href="#"><img data-cfsrc="img/footer-logo.png" alt="" style="display:none;visibility:hidden;"><noscript><img src="img/footer-logo.png" alt=""></noscript></a>
+<a href="/index.html"><img src="img/logo.png" alt="" style="height: 150px;"></a>
 </div>
 <p>Consectetur adipiscing elit, sed do eiusmod tempor labore et dolore magna aliqua. Quis ipsum
 suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
@@ -333,31 +362,33 @@ suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel 
 <div class="footer__widget">
 <h5>Quick links</h5>
 <ul>
-<li><a href="#">History</a></li>
-<li><a href="#">Our Staff</a></li>
-<li><a href="#">Our Partners</a></li>
-<li><a href="#">Blog</a></li>
+<li><a href="/contact.html">Bookings</a></li>
+<li><a href="/services.html">Our Services</a></li>
+<li><a href="/fleet.html">Our Fleet</a></li>
+<li><a href="/blog.html">Blog</a></li>
+<li><a href="#">Brochure</a></li>
 </ul>
 </div>
 </div>
-<div class="col-lg-2 col-md-6 col-sm-6">
+ <div class="col-lg-2 col-md-6 col-sm-6">
 <div class="footer__widget">
-<h5>Services</h5>
+<h5>Interesting Infos</h5>
 <ul>
-<li><a href="#">Air Shipping</a></li>
-<li><a href="#">Expert Staff</a></li>
+<li><p style="color: gainsboro;">We are commited to providing High Quality Service to our customers through out virginia, maryland and washington DC metro areas.</p></li>
+<!--<li><a href="#">Expert Staff</a></li>
 <li><a href="#">Ground Shipping</a></li>
-<li><a href="#">Logistic Services</a></li>
+<li><a href="#">Logistic Services</a></li>-->
 </ul>
 </div>
 </div>
 <div class="col-lg-3 col-md-6 col-sm-6">
 <div class="footer__widget">
-<h5>Contacts</h5>
+<h5>VA Transportation HEALTHCARE</h5>
 <ul class="address">
-<li><span class="icon_pin"></span> 450 Strand, Charing Cross, US</li>
-<li><span class="icon_phone"></span> +44 20 7930 8205</li>
-<li><span class="icon_mail"></span> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="563f3830397835393a393a3f3416313b373f3a7835393b">[email&#160;protected]</a></li>
+<li><span class="icon_pin"></span> 8802 sudley road MANASSAS VA 20110</li>
+<li><span class="icon_phone"></span> +1 571 450 1300</li>
+<li><span class="icon_mail"></span> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="71181f171e5f121e1d1e1d181331161c10181d5f121e1c">[email&#160;protected]</a></li>
+<li><p style="color: gainsboro;">DMV Certificate #601</p></li>
 </ul>
 </div>
 </div>
@@ -369,15 +400,18 @@ suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel 
 <div class="col-lg-9 col-md-8">
 <div class="footer__copyright__text">
 
-<p>Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" rel="nofollow noopener">Colorlib</a>
+<p>Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved | <a href="https://colorlib.com" target="_blank" rel="nofollow noopener">Privacy Policy</a> | <a href="https://colorlib.com" target="_blank" rel="nofollow noopener">Refund Policy</a>
 </p>
-
 </div>
 </div>
 <div class="col-lg-3 col-md-4">
 <div class="footer__copyright__links">
-<a href="#">Client Login</a>
-<a href="#">Join Team</a>
+    <div class="offcanvas__social">
+<a href="#"><span class="social_facebook"></span></a>
+<a href="#"><span class="social_twitter"></span></a>
+<a href="#"><span class="social_linkedin"></span></a>
+<a href="#"><span class="social_pinterest"></span></a>
+</div>
 </div>
 </div>
 </div>
