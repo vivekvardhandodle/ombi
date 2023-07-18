@@ -8,6 +8,79 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Bright Star</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+    .ibar{
+      font-family: 'Source Sans Pro' , sans-serif;
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      z-index: 10;
+    }
+     
+    .ibar a{
+      text-decoration: none;
+      width: 130px;
+      /* background: #3b5999; */
+      color: #fff;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 2px;
+      font-size: 13px;
+      transform: translateX(-95px);
+      -webkit-transform: translateX(-95px);
+      -ms-transform: translateX(-95px);
+      transition: 0.3s linear;
+      -webkit-transition: 0.3s linear;
+      -ms-transition: 0.3s linear;
+    }
+    .ibar a i{
+      padding-left: 20px;
+      font-size: 25px;
+      animation: letszoom 3s linear alternate-reverse infinite;
+    }
+
+    .ibar a:hover{
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+    }
+    @keyframes letszoom{
+      from{
+        transform: scale(0.8);
+      }
+      to{
+        transform: scale(1);
+      }
+    }
+
+    .facebk{
+      background: #3b5999;
+    }
+    .insta{
+      background: #e4405f;
+    }
+    .twi{
+      background: #00aced;
+    }
+    .utube{
+      background: #cd201f;
+    }
+    .linkedin{
+      background: #0077B5;
+    }
+    .tik{
+      background: #212121;
+    }
+    .mail{
+      background: #FF8F00;
+    }
+</style>
+
 
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -21,9 +94,33 @@
 <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
 <link rel="stylesheet" href="css/style.css" type="text/css">
 
+
 <script nonce="cf039ebf-9cf8-4fbd-bfdf-87dc823076d7">(function(w,d){!function(a,b,c,d){a[c]=a[c]||{};a[c].executed=[];a.zaraz={deferred:[],listeners:[]};a.zaraz.q=[];a.zaraz._f=function(e){return function(){var f=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:f})}};for(const g of["track","set","debug"])a.zaraz[g]=a.zaraz._f(g);a.zaraz.init=()=>{var h=b.getElementsByTagName(d)[0],i=b.createElement(d),j=b.getElementsByTagName("title")[0];j&&(a[c].t=b.getElementsByTagName("title")[0].text);a[c].x=Math.random();a[c].w=a.screen.width;a[c].h=a.screen.height;a[c].j=a.innerHeight;a[c].e=a.innerWidth;a[c].l=a.location.href;a[c].r=b.referrer;a[c].k=a.screen.colorDepth;a[c].n=b.characterSet;a[c].o=(new Date).getTimezoneOffset();if(a.dataLayer)for(const n of Object.entries(Object.entries(dataLayer).reduce(((o,p)=>({...o[1],...p[1]})),{})))zaraz.set(n[0],n[1],{scope:"page"});a[c].q=[];for(;a.zaraz.q.length;){const q=a.zaraz.q.shift();a[c].q.push(q)}i.defer=!0;for(const r of[localStorage,sessionStorage])Object.keys(r||{}).filter((t=>t.startsWith("_zaraz_"))).forEach((s=>{try{a[c]["z_"+s.slice(7)]=JSON.parse(r.getItem(s))}catch{a[c]["z_"+s.slice(7)]=r.getItem(s)}}));i.referrerPolicy="origin";i.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a[c])));h.parentNode.insertBefore(i,h)};["complete","interactive"].includes(b.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
 <body>
 
+    <div class="ibar">
+    <a href="#" class="facebk">
+      Visit Us<i class="fa-brands fa-square-facebook"></i>
+    </a>
+    <a href="#" class="insta">
+      Visit Us<i class="fa-brands fa-square-instagram"></i>
+    </a>
+    <a href="#" class="twi">
+      Visit Us<i class="fa-brands fa-square-twitter"></i>
+    </a>
+    <a href="#" class="tik">
+      Visit Us<i class="fa-brands fa-tiktok"></i>
+    </a>
+    <a href="#" class="mail">
+      Visit Us<i class="fa-sharp fa-solid fa-envelope"></i>
+    </a>
+    <a href="#" class="utube">
+      Visit Us<i class="fa-brands fa-square-youtube"></i>
+    </a>
+    <a href="#" class="linkedin">
+      Visit Us<i class="fa-brands fa-linkedin"></i>
+    </a>
+  </div>
 <div id="preloder">
 <div class="loader"></div>
 </div>
@@ -139,7 +236,7 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
 <li><a href="./blog-details.html">Woodbridge VA</a></li>
 </ul>
 </li>
-<!--<li><a href="./fleet.html">Our Fleet</a></li>-->
+<li><a href="./fleet.html">Our Fleet</a></li>
 <li><a href="./career.html">Career</a></li>
 <li><a href="./contact.html">Booking</a></li>
 <!--<li><a href="#">Brochure</a></li>-->
@@ -157,19 +254,19 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
 <section class="contact spad">
 <div class="container">
 <div class="row">
-<div class="col-lg-12">
+<!--<div class="col-lg-12">
 <div class="contact__map">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49116.39176087041!2d-86.41867791216099!3d39.69977417971648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886ca48c841038a1%3A0x70cfba96bf847f0!2sPlainfield%2C%20IN%2C%20USA!5e0!3m2!1sen!2sbd!4v1586106673811!5m2!1sen!2sbd" height="460" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
-</div>
+</div>-->
 </div>
 </div>
 <div style="text-align: center;">
-          <h1 style="text-align: center; padding-top: 4%;">BLUE STAR TRANSPORTATION</h1>
+          <h1 style="text-align: center; padding-top: 4%;">BRIGHT STAR NON-MEDICAL TRANSPORTATION LLC</h1>
           <h2 style="text-align: center;">ONLINE RESERVATION</h2>
           <p style="text-align: center;">Up to 20% Off at Online Booking for Wheelchair/Stretcher Van and Ambulatory Services</p>
-          <button type="button" class="btn btn-success">New Reservation</button>
-          <button type="button" class="btn btn-success">Calculator</button>
+          <button type="button" class="btn btn-success" style="color: white; background-color: #FF8F00;">New Reservation</button>
+          <button type="button" class="btn btn-success" style="color: white; background-color: #FF8F00;">Calculator</button>
         </div>
 
         <div class="container-fluid" style="padding-top: 5%; padding-left: 5%; padding-right: 5%;">
@@ -217,7 +314,12 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
               <label for="exampleInput6">Pickup time *</label>
               <input type="text" name="Time of Pickup" class="form-control form-control-lg" id="exampleInput6" placeholder="enter time" required>
               <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-            </div>
+            </div><br>
+            <div>
+                <label for="date-of-survey">Date of Survey:*</label><br>
+                <input type="date" id="date-of-survey" name="Date of Survey" required>
+            </div><br>
+            
             <div class="form-group" style="padding-top: 2%;">
               <label for="exampleInput7">Pickup Address *</label>
               <input type="text" name="Pickup Address" class="form-control form-control-lg" id="exampleInput7" placeholder="" required>
@@ -266,10 +368,12 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
               <textarea class="form-control" name="Comments" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
               <label for="floatingTextarea2">Comments</label>
             </div> 
-            <p>Please note that by submitting this inquiry form, you agree to our <a href="#">privacy policy</a> and <a href="#">refund policy</a></p>    
-            <button type="submit" class="btn btn-success">Submit</button>         
+            <p>Please note that by submitting this inquiry form, you agree to our <a href="#" style="color: #0077B5;">privacy policy</a> and <a href="#" style="color: #0077B5;">refund policy</a></p>    
+            <button type="submit" class="btn btn-success" style="color: white; background-color: #FF8F00;">Submit</button>         
           </form>
         </div><br>
+
+
 <div class="container">
 
 
@@ -278,8 +382,8 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
 <span>Information</span>
 <h2>Contact Details</h2>
 </div>
-<p>As you might expect of a company that began as a high-end interiors<br /> contractor, we pay
-strict attention.</p>
+<!--<p>As you might expect of a company that began as a high-end interiors<br /> contractor, we pay
+strict attention.</p>-->
 <ul>
 <li>
 <div class="contact__widget__icon">
@@ -305,10 +409,20 @@ strict attention.</p>
 </div>
 <div class="contact__widget__text">
 <h6>Email Address</h6>
-<p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4d24232b22632e22212221242f0d2a202c2421632e2220">[email&#160;protected]</a></p>
+<p><a href="mailto:prempreetham2122@gmail.com" style="color: #FF8F00;">brightstartransport@gmail.com </a></p>
+<!--<p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4d24232b22632e22212221242f0d2a202c2421632e2220">[email&#160;protected]</a></p>-->
 </div>
 </li>
 </ul>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="contact__map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49116.39176087041!2d-86.41867791216099!3d39.69977417971648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886ca48c841038a1%3A0x70cfba96bf847f0!2sPlainfield%2C%20IN%2C%20USA!5e0!3m2!1sen!2sbd!4v1586106673811!5m2!1sen!2sbd" height="460" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+</div>
+</div>
 </div>
 
 <!--
@@ -436,6 +550,7 @@ suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel 
 <script src="js/jquery.slicknav.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
+
 
 </body>
 </html>

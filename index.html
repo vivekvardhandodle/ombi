@@ -6,8 +6,82 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Bright Star</title>
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+    .ibar{
+      font-family: 'Source Sans Pro' , sans-serif;
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      z-index: 10;
+    }
+     
+    .ibar a{
+      text-decoration: none;
+      width: 130px;
+      /* background: #3b5999; */
+      color: #fff;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 2px;
+      font-size: 13px;
+      transform: translateX(-95px);
+      -webkit-transform: translateX(-95px);
+      -ms-transform: translateX(-95px);
+      transition: 0.3s linear;
+      -webkit-transition: 0.3s linear;
+      -ms-transition: 0.3s linear;
+    }
+    .ibar a i{
+      padding-left: 20px;
+      font-size: 25px;
+      animation: letszoom 3s linear alternate-reverse infinite;
+    }
+
+    .ibar a:hover{
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+    }
+    @keyframes letszoom{
+      from{
+        transform: scale(0.8);
+      }
+      to{
+        transform: scale(1);
+      }
+    }
+
+    .facebk{
+      background: #3b5999;
+    }
+    .insta{
+      background: #e4405f;
+    }
+    .twi{
+      background: #00aced;
+    }
+    .utube{
+      background: #cd201f;
+    }
+    .linkedin{
+      background: #0077B5;
+    }
+    .tik{
+      background: #212121;
+    }
+    .mail{
+      background: #FF8F00;
+    }
+</style>
 
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
@@ -19,6 +93,32 @@
 <script nonce="8f1c6209-87f4-4267-95de-76017ad88be2">(function(w,d){!function(a,b,c,d){a[c]=a[c]||{};a[c].executed=[];a.zaraz={deferred:[],listeners:[]};a.zaraz.q=[];a.zaraz._f=function(e){return function(){var f=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:f})}};for(const g of["track","set","debug"])a.zaraz[g]=a.zaraz._f(g);a.zaraz.init=()=>{var h=b.getElementsByTagName(d)[0],i=b.createElement(d),j=b.getElementsByTagName("title")[0];j&&(a[c].t=b.getElementsByTagName("title")[0].text);a[c].x=Math.random();a[c].w=a.screen.width;a[c].h=a.screen.height;a[c].j=a.innerHeight;a[c].e=a.innerWidth;a[c].l=a.location.href;a[c].r=b.referrer;a[c].k=a.screen.colorDepth;a[c].n=b.characterSet;a[c].o=(new Date).getTimezoneOffset();if(a.dataLayer)for(const n of Object.entries(Object.entries(dataLayer).reduce(((o,p)=>({...o[1],...p[1]})),{})))zaraz.set(n[0],n[1],{scope:"page"});a[c].q=[];for(;a.zaraz.q.length;){const q=a.zaraz.q.shift();a[c].q.push(q)}i.defer=!0;for(const r of[localStorage,sessionStorage])Object.keys(r||{}).filter((t=>t.startsWith("_zaraz_"))).forEach((s=>{try{a[c]["z_"+s.slice(7)]=JSON.parse(r.getItem(s))}catch{a[c]["z_"+s.slice(7)]=r.getItem(s)}}));i.referrerPolicy="origin";i.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a[c])));h.parentNode.insertBefore(i,h)};["complete","interactive"].includes(b.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
 <body>
 
+    <div class="ibar">
+    <a href="#" class="facebk">
+      Visit Us<i class="fa-brands fa-square-facebook"></i>
+    </a>
+    <a href="#" class="insta">
+      Visit Us<i class="fa-brands fa-square-instagram"></i>
+    </a>
+    <a href="#" class="twi">
+      Visit Us<i class="fa-brands fa-square-twitter"></i>
+    </a>
+    <a href="#" class="tik">
+      Visit Us<i class="fa-brands fa-tiktok"></i>
+    </a>
+    <a href="#" class="mail">
+      Visit Us<i class="fa-sharp fa-solid fa-envelope"></i>
+    </a>
+    <a href="#" class="utube">
+      Visit Us<i class="fa-brands fa-square-youtube"></i>
+    </a>
+    <a href="#" class="linkedin">
+      Visit Us<i class="fa-brands fa-linkedin"></i>
+    </a>
+  </div>
+
+
+  
 <div id="preloder">
 <div class="loader"></div>
 </div>
@@ -96,7 +196,7 @@
 
 </ul>
 </li>
-<li><a href="#">Testinomials</a>
+<li><a href="/testimonials.html">Testinomials</a>
 <ul class="dropdown">
 <li><a href="./Feedback.html">Feedback Survey</a></li>
 </ul>
@@ -141,6 +241,49 @@
 <div class="canvas__open"><i class="fa fa-bars"></i></div>
 </div>
 </header>
+
+              <!-- Carousel -->
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                      </ol>
+              
+                      <!-- Slides -->
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="img/hero1.jpg" alt="Image 1" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/hero2.jpg" alt="Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/hero3.jpg" alt="Image 3" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/hero4.jpg" alt="Image 4" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/hero5.jpg" alt="Image 5" class="d-block w-100">
+                        </div>
+
+                      </div>
+              
+                      <!-- Controls -->
+                      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
 
 
 <section class="hero spad set-bg" data-setbg="img/hero1.jpg">
@@ -238,10 +381,11 @@ have improved bottom lines across virtually every industry.</p>
 <div class="col-lg-12">
 <div class="section-title">
 <span>ABOUT US</span>
-<h2>OUR CLIENTS & COUNTERS</h2>
+<h2>OUR CLIENTS & CUSTOMERS</h2>
 </div>
 </div>
 </div>
+<center>
 <div class="counter__content">
 <div class="row">
 <div class="col-lg-3 col-md-6 col-sm-6">
@@ -251,8 +395,8 @@ have improved bottom lines across virtually every industry.</p>
 <h2 class="c_num">2500</h2>
 </div>
 <h5>Customers Served</h5>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-ut labore et dolore magna aliqua.</p>
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.</p>-->
 </div>
 </div>
 <div class="col-lg-3 col-md-6 col-sm-6">
@@ -262,8 +406,8 @@ ut labore et dolore magna aliqua.</p>
 <h2 class="c_num">2023</h2>
 </div>
 <h5>Working Since</h5>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
- ut labore et dolore magna aliqua.</p>
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ ut labore et dolore magna aliqua.</p>-->
 </div>
 </div>
 <div class="col-lg-3 col-md-6 col-sm-6">
@@ -274,12 +418,13 @@ ut labore et dolore magna aliqua.</p>
 <strong>+</strong>
 </div>
 <h5>Successfull Trips</h5>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-ut labore et dolore magna aliqua.</p>
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.</p>-->
 </div>
 </div>
 </div>
-<h5 style="text-align: center;color: orangered;">VA TRANSPORTATION HEALTHCARE PROVIDE MEDICAL TRANSPORT TO MANY HEALTHCARE PROVIDERS!</h5><br>
+</center>
+<h5 style="text-align: center;color: orangered;">BRIGHT STAR TRANSPORTATION HEALTHCARE PROVIDE MEDICAL TRANSPORT TO MANY HEALTHCARE PROVIDERS!</h5><br>
 <div class="partner__logo">
 <div class="row">
 <div class="col-lg-12">
@@ -326,7 +471,9 @@ ut labore et dolore magna aliqua.</p>
 <h2>WHY USE OUR NON-EMERGENCY MEDICAL TRANSPORT SERVICE?</h2>
 </div>
 <div class="row">
-<div class="col-lg-6 col-md-6 col-sm-6">
+<p style="color: #fff;">We provide professional, door-to-door non-emergency wheelchair, stretcher and other transport services to patients, elderly people and anyone who needs assisted transportation  throughout the tri-state area. Our specialized medical transportation responsibilities include but are not limited to: senior citizens, individuals who require the use of wheelchairs and parents and children with special needs. We provide transportation services for a variety of situations, including hospital transportation to home services. Our team can provide wheelchair-accessible vehicles for patients. Our services are for private citizens, hospitals, doctors, insurance companies/HMOs, nursing or private group homes, and assisted living facilities. We assist clients from the time of pick-up to drop-off and make sure that they get there safely and on-time. we understand the needs of our clients, especially in regards to geriatric wheelchair transportation services. We provide a full range of transportation services for elderly, individuals with disabilities, and those facing medical challenges.</p>
+
+<!--<div class="col-lg-6 col-md-6 col-sm-6">
 <div class="chooseus__item">
 <div class="chooseus__item__icon">
 <img src="img/chooseus/ci-1.png" alt="">
@@ -368,7 +515,7 @@ ut labore et dolore magna aliqua.</p>
 <h5>Fast Delivery</h5>
 <p>Carrier agrees to spot or drop trailers or vehicles at.</p>
 </div>
-</div>
+</div>-->
 </div>
 </div>
 </div>
@@ -616,6 +763,60 @@ be a result</p>
 </div>
 </div>
 </div>
+</section>
+
+<div class="container">
+<div class="counter__content" style="text-align: center;">
+<div class="row">
+<div class="col" style="background-color: #f5b070;">
+<div class="counter__item">
+<!--<img src="img/about/ci-1.png" alt="">-->
+<div class="counter__item__num">
+<h2 class="c_num">24</h2>
+<h2>/7</h2>
+</div>
+<h5>Ready for service</h5>
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.</p>-->
+</div>
+</div>
+<div class="col" style="background-color: #f4c982;">
+<div class="counter__item">
+<!--<img src="img/about/ci-2.png" alt="">-->
+<div class="counter__item__num">
+<h2 class="c_num">100</h2>
+<h2>%</h2>
+</div>
+<h5>Satisfaction guaranteed</h5>
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ ut labore et dolore magna aliqua.</p>-->
+</div>
+</div>
+</div>
+</div>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="col">
+                <h5>No better place to get you healthy again</h5>
+                <h2>VISIT US</h2>
+                <h6 style="">Do you usually need a wheelchair to move around for getting medical help? We provided assisted transportation services for non emergency medical purposes. We are are your wheelchair transport specialists. 
+                    Our drivers are trained specifically in assisting clients that require the use of wheelchairs. Our drivers are experienced and understand the needs of wheelchair users and provide personal assistance. 
+                    Whether you need help to the wheelchair, personal assistance, transporting medical documents to and from your doctor, our drivers are able to provide safe reliable <span style="color: #FF8F00;">non-emergency medical transportation</span> , and state-of-the-art wheelchair accessible vehicles 24/7.</h6>
+
+                <h6 style="color: #FF8F00;">Virginia Service Areas: <a href="#">Dumfries</a> | <a href="#">Gainesville</a> | <a href="#">Falls Church</a> | <a href="#">Vienna</a> | <a href="#">Fairfax</a> | <a href="#">Chantilly</a> | <a href="#">Herndon</a> | <a href="#">Fredericksburg</a> |
+                    <a href="#">Sterling</a> | <a href="#">Bristow</a> | <a href="#">Springfield</a> | <a href="#">Manassas</a> | <a href="#">Annandale</a> | <a href="#">Burke</a> | <a href="#">Ashburn</a> | <a href="#">McLean</a> | <a href="#">Leesburg</a> |
+                    <a href="#">Woodbridge</a> | <a href="#">Reston</a> | <a href="#">Centreville</a> | <a href="#">Alexandria</a> | <a href="#">Stafford</a> | <a href="#">Arlington</a> | <a href="#">Lorton</a> | <a href="#">Reston</a> | <a href="#">Spotsylvania</a> | <a href="#">Mount Vernon</a></h6>
+                    <div style="text-align: center;">
+                    <button style="color: white; background-color: #FF8F00;">Download Brochure</button>
+                    </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="latest spad">

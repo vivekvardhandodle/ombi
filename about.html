@@ -9,6 +9,78 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+    .ibar{
+      font-family: 'Source Sans Pro' , sans-serif;
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      z-index: 10;
+    }
+     
+    .ibar a{
+      text-decoration: none;
+      width: 130px;
+      /* background: #3b5999; */
+      color: #fff;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 2px;
+      font-size: 13px;
+      transform: translateX(-95px);
+      -webkit-transform: translateX(-95px);
+      -ms-transform: translateX(-95px);
+      transition: 0.3s linear;
+      -webkit-transition: 0.3s linear;
+      -ms-transition: 0.3s linear;
+    }
+    .ibar a i{
+      padding-left: 20px;
+      font-size: 25px;
+      animation: letszoom 3s linear alternate-reverse infinite;
+    }
+
+    .ibar a:hover{
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+    }
+    @keyframes letszoom{
+      from{
+        transform: scale(0.8);
+      }
+      to{
+        transform: scale(1);
+      }
+    }
+
+    .facebk{
+      background: #3b5999;
+    }
+    .insta{
+      background: #e4405f;
+    }
+    .twi{
+      background: #00aced;
+    }
+    .utube{
+      background: #cd201f;
+    }
+    .linkedin{
+      background: #0077B5;
+    }
+    .tik{
+      background: #212121;
+    }
+    .mail{
+      background: #FF8F00;
+    }
+</style>
 
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
@@ -20,6 +92,29 @@
 <script nonce="e66bc024-0f72-463f-a1fe-18aae23a65ea">(function(w,d){!function(a,b,c,d){a[c]=a[c]||{};a[c].executed=[];a.zaraz={deferred:[],listeners:[]};a.zaraz.q=[];a.zaraz._f=function(e){return function(){var f=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:f})}};for(const g of["track","set","debug"])a.zaraz[g]=a.zaraz._f(g);a.zaraz.init=()=>{var h=b.getElementsByTagName(d)[0],i=b.createElement(d),j=b.getElementsByTagName("title")[0];j&&(a[c].t=b.getElementsByTagName("title")[0].text);a[c].x=Math.random();a[c].w=a.screen.width;a[c].h=a.screen.height;a[c].j=a.innerHeight;a[c].e=a.innerWidth;a[c].l=a.location.href;a[c].r=b.referrer;a[c].k=a.screen.colorDepth;a[c].n=b.characterSet;a[c].o=(new Date).getTimezoneOffset();if(a.dataLayer)for(const n of Object.entries(Object.entries(dataLayer).reduce(((o,p)=>({...o[1],...p[1]})),{})))zaraz.set(n[0],n[1],{scope:"page"});a[c].q=[];for(;a.zaraz.q.length;){const q=a.zaraz.q.shift();a[c].q.push(q)}i.defer=!0;for(const r of[localStorage,sessionStorage])Object.keys(r||{}).filter((t=>t.startsWith("_zaraz_"))).forEach((s=>{try{a[c]["z_"+s.slice(7)]=JSON.parse(r.getItem(s))}catch{a[c]["z_"+s.slice(7)]=r.getItem(s)}}));i.referrerPolicy="origin";i.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a[c])));h.parentNode.insertBefore(i,h)};["complete","interactive"].includes(b.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
 <body>
 
+    <div class="ibar">
+    <a href="#" class="facebk">
+      Visit Us<i class="fa-brands fa-square-facebook"></i>
+    </a>
+    <a href="#" class="insta">
+      Visit Us<i class="fa-brands fa-square-instagram"></i>
+    </a>
+    <a href="#" class="twi">
+      Visit Us<i class="fa-brands fa-square-twitter"></i>
+    </a>
+    <a href="#" class="tik">
+      Visit Us<i class="fa-brands fa-tiktok"></i>
+    </a>
+    <a href="#" class="mail">
+      Visit Us<i class="fa-sharp fa-solid fa-envelope"></i>
+    </a>
+    <a href="#" class="utube">
+      Visit Us<i class="fa-brands fa-square-youtube"></i>
+    </a>
+    <a href="#" class="linkedin">
+      Visit Us<i class="fa-brands fa-linkedin"></i>
+    </a>
+  </div>
 <div id="preloder">
 <div class="loader"></div>
 </div>

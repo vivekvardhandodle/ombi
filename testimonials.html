@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Bright Star</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+    .ibar{
+      font-family: 'Source Sans Pro' , sans-serif;
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      z-index: 10;
+    }
+     
+    .ibar a{
+      text-decoration: none;
+      width: 130px;
+      /* background: #3b5999; */
+      color: #fff;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 2px;
+      font-size: 13px;
+      transform: translateX(-95px);
+      -webkit-transform: translateX(-95px);
+      -ms-transform: translateX(-95px);
+      transition: 0.3s linear;
+      -webkit-transition: 0.3s linear;
+      -ms-transition: 0.3s linear;
+    }
+    .ibar a i{
+      padding-left: 20px;
+      font-size: 25px;
+      animation: letszoom 3s linear alternate-reverse infinite;
+    }
+
+    .ibar a:hover{
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+    }
+    @keyframes letszoom{
+      from{
+        transform: scale(0.8);
+      }
+      to{
+        transform: scale(1);
+      }
+    }
+
+    .facebk{
+      background: #3b5999;
+    }
+    .insta{
+      background: #e4405f;
+    }
+    .twi{
+      background: #00aced;
+    }
+    .utube{
+      background: #cd201f;
+    }
+    .linkedin{
+      background: #0077B5;
+    }
+    .tik{
+      background: #212121;
+    }
+    .mail{
+      background: #FF8F00;
+    }
+</style>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+<link rel="stylesheet" href="css/nice-select.css" type="text/css">
+<link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+<link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script nonce="8f1c6209-87f4-4267-95de-76017ad88be2">(function(w,d){!function(a,b,c,d){a[c]=a[c]||{};a[c].executed=[];a.zaraz={deferred:[],listeners:[]};a.zaraz.q=[];a.zaraz._f=function(e){return function(){var f=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:f})}};for(const g of["track","set","debug"])a.zaraz[g]=a.zaraz._f(g);a.zaraz.init=()=>{var h=b.getElementsByTagName(d)[0],i=b.createElement(d),j=b.getElementsByTagName("title")[0];j&&(a[c].t=b.getElementsByTagName("title")[0].text);a[c].x=Math.random();a[c].w=a.screen.width;a[c].h=a.screen.height;a[c].j=a.innerHeight;a[c].e=a.innerWidth;a[c].l=a.location.href;a[c].r=b.referrer;a[c].k=a.screen.colorDepth;a[c].n=b.characterSet;a[c].o=(new Date).getTimezoneOffset();if(a.dataLayer)for(const n of Object.entries(Object.entries(dataLayer).reduce(((o,p)=>({...o[1],...p[1]})),{})))zaraz.set(n[0],n[1],{scope:"page"});a[c].q=[];for(;a.zaraz.q.length;){const q=a.zaraz.q.shift();a[c].q.push(q)}i.defer=!0;for(const r of[localStorage,sessionStorage])Object.keys(r||{}).filter((t=>t.startsWith("_zaraz_"))).forEach((s=>{try{a[c]["z_"+s.slice(7)]=JSON.parse(r.getItem(s))}catch{a[c]["z_"+s.slice(7)]=r.getItem(s)}}));i.referrerPolicy="origin";i.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a[c])));h.parentNode.insertBefore(i,h)};["complete","interactive"].includes(b.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+<body>
+    <div class="ibar">
+    <a href="#" class="facebk">
+      Visit Us<i class="fa-brands fa-square-facebook"></i>
+    </a>
+    <a href="#" class="insta">
+      Visit Us<i class="fa-brands fa-square-instagram"></i>
+    </a>
+    <a href="#" class="twi">
+      Visit Us<i class="fa-brands fa-square-twitter"></i>
+    </a>
+    <a href="#" class="tik">
+      Visit Us<i class="fa-brands fa-tiktok"></i>
+    </a>
+    <a href="#" class="mail">
+      Visit Us<i class="fa-sharp fa-solid fa-envelope"></i>
+    </a>
+    <a href="#" class="utube">
+      Visit Us<i class="fa-brands fa-square-youtube"></i>
+    </a>
+    <a href="#" class="linkedin">
+      Visit Us<i class="fa-brands fa-linkedin"></i>
+    </a>
+  </div>
+<div id="preloder">
+<div class="loader"></div>
+</div>
+
+<div class="offcanvas-menu-overlay"></div>
+<div class="offcanvas-menu-wrapper">
+<div class="offcanvas__search__option">
+<span class="icon_search search-switch"></span>
+</div>
+<div class="offcanvas__logo">
+<a href="./index.html"><img src="img/footer-logo.png" alt=""></a>
+</div>
+<div id="mobile-menu-wrap"></div>
+<ul class="offcanvas__widget">
+<li><span class="icon_phone"></span> +44 20 7930 8205</li>
+<li><span class="icon_pin"></span> 450 Strand, Charing Cross, London</li>
+</ul>
+<div class="offcanvas__auth">
+<a href="#"><span class="icon_profile"></span> Register or Sign in</a>
+</div>
+<div class="offcanvas__social">
+<a href="#"><span class="social_facebook"></span></a>
+<a href="#"><span class="social_twitter"></span></a>
+<a href="#"><span class="social_linkedin"></span></a>
+<a href="#"><span class="social_pinterest"></span></a>
+</div>
+</div>
+
+
+<header class="header">
+<div class="header__top">
+<div class="container">
+<div class="row">
+<div class="col-lg-9 offset-lg-3">
+<ul class="header__top__widget">
+<li><span class="icon_phone"></span> +1 234 567 8901</li>
+<li><span class="icon_pin"></span> Fairfax, VA, USA</li>
+</ul>
+<div class="header__top__right">
+<div class="header__top__right__social">
+<a href="#"><span class="social_facebook"></span></a>
+<a href="#"><span class="social_twitter"></span></a>
+<a href="#"><span class="social_linkedin"></span></a>
+<a href="#"><span class="social_pinterest"></span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="header__options">
+<div class="container">
+<div class="row">
+<div class="col-lg-2">
+<div class="header__logo">
+<a href="./index.html"><img src="img/logo.png" alt="" style="height: 150px;"></a>
+</div>
+</div>
+<div class="col-lg-10" style="padding-left: 100px;">
+    <nav class="header__menu mobile-menu">
+<ul>
+<li class="active"><a href="./index.html">Home</a></li>
+<li><a href="./about.html">About Us</a></li>
+<li><a href="./services.html">Services</a>
+<ul class="dropdown">
+<li><a href="./about.html">Elderly Transportation</a></li>
+<li><a href="./services-details.html">Bed to Bed Transportation</a></li>
+<li><a href="./blog-details.html">Strecher Transport</a></li>
+<li><a href="./about.html">Non-Emergency Medical Transportation</a></li>
+<li><a href="./about.html">Wheelchair Transportation</a></li>
+<li><a href="./about.html">Special Tips</a></li>
+<li><a href="./about.html">Ambulatory Transport</a></li>
+<li><a href="./about.html">Long Distance Transportation</a></li>
+<li><a href="./about.html">Bariatric Transportation</a></li>
+
+</ul>
+</li>
+<li><a href="#">Testinomials</a>
+<ul class="dropdown">
+<li><a href="./Feedback.html">Feedback Survey</a></li>
+</ul>
+</li>
+<li><a href="./discount.html">Discounts</a></li>
+<li><a href="#">Service Areas</a>
+<ul class="dropdown">
+<li><a href="./about.html">Ashburn VA</a></li>
+<li><a href="./services-details.html">Dumfries VA</a></li>
+<li><a href="./blog-details.html">Fairfax VA</a></li>
+<li><a href="./blog-details.html">Herndon VA</a></li>
+<li><a href="./blog-details.html">Leesburg VA</a></li>
+<li><a href="./blog-details.html">Manassas VA</a></li>
+<li><a href="./blog-details.html">Sterling VA</a></li>
+<li><a href="./blog-details.html">Alexandria VA</a></li>
+<li><a href="./blog-details.html">Annandale VA</a></li>
+<li><a href="./blog-details.html">Arlington VA</a></li>
+<li><a href="./blog-details.html">Bristow VA</a></li>
+<li><a href="./blog-details.html">Burke VA</a></li>
+<li><a href="./blog-details.html">Centreville VA</a></li>
+<li><a href="./blog-details.html">Chantilly VA</a></li>
+<li><a href="./blog-details.html">Falls Church VA</a></li>
+<li><a href="./blog-details.html">Fredrickburg VA</a></li>
+<li><a href="./blog-details.html">Gainesville VA</a></li>
+<li><a href="./blog-details.html">Mc Lean VA</a></li>
+<li><a href="./blog-details.html">Reston VA</a></li>
+<li><a href="./blog-details.html">Springfield</a></li>
+<li><a href="./blog-details.html">Stafford VA</a></li>
+<li><a href="./blog-details.html">Vienna VA</a></li>
+<li><a href="./blog-details.html">Woodbridge VA</a></li>
+</ul>
+</li>
+<!--<li><a href="./fleet.html">Our Fleet</a></li>-->
+<li><a href="./career.html">Career</a></li>
+<li><a href="./contact.html">Booking</a></li>
+<!--<li><a href="#">Brochure</a></li>-->
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="canvas__open"><i class="fa fa-bars"></i></div>
+</div>
+</header>
+<br>
+<section class="testimonial spad set-bg" data-setbg="img/testimonial/testimonial-bg.jpg">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="testimonial__text">
+<div class="section-title">
+<span>Testimonials</span>
+<h2>Our Custormer Reviews</h2>
+</div>
+<div class="testimonial__slider owl-carousel">
+<div class="testimonial__item">
+<img src="img/testimonial/quote.png" alt="">
+<p>“Thank you for taking care of my grandmother for transportation to her doctor’s clinic. Everything went very smoothly..”</p>
+<div class="testimonial__item__author">
+<!--<div class="testimonial__item__author__pic">
+<img src="img/testimonial/ta-1.png" alt="">
+</div>-->
+<div class="testimonial__item__author__text">
+<h5>Andrew Jacobs</h5>
+<span>January 2021</span>
+</div>
+</div>
+</div>
+<div class="testimonial__item">
+<img src="img/testimonial/quote.png" alt="">
+<p>“I needed to get my mother’s checked up. She cannot walk. I needed custom built vehicle. You guys did a good job. Recommended.”</p>
+<div class="testimonial__item__author">
+<!--<div class="testimonial__item__author__pic">
+<img src="img/testimonial/ta-1.png" alt="">
+</div>-->
+<div class="testimonial__item__author__text">
+<h5>Smitha Patel</h5>
+<span>June 2021</span>
+</div>
+</div>
+</div>
+<div class="testimonial__item">
+<img src="img/testimonial/quote.png" alt="">
+<p>“Very few people do their work with excellence and compassion. This company is a high value on these things. Highly recommend!”</p>
+<div class="testimonial__item__author">
+<div class="testimonial__item__author__pic">
+<img src="img/testimonial/ta-1.png" alt="">
+</div>
+<div class="testimonial__item__author__text">
+<h5>Don Ward</h5>
+<span>July 2022</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--<div class="col-lg-5 offset-lg-2">
+<div class="request__form">
+<div class="section-title">
+<span>Contacts Us</span>
+<h2>Request A Call Back</h2>
+</div>
+<form action="#">
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-6">
+<input type="text" placeholder="Your Name">
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<input type="text" placeholder="Your Email">
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<input type="text" placeholder="Your Phone">
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<select>
+<option value="">Services</option>
+<option value="">Services 1</option>
+</select>
+</div>
+<div class="col-lg-12">
+<textarea placeholder="Message"></textarea>
+<button type="submit" class="site-btn"><span>Submit Now</span></button>
+</div>
+</div>
+</form>
+</div>
+</div>-->
+</div>
+</div>
+</section><br>
+
+
+<footer class="footer">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="footer__about">
+<div class="footer__logo">
+<a href="#"><img src="img/footer-logo.png" alt=""></a>
+</div>
+<p>Consectetur adipiscing elit, sed do eiusmod tempor labore et dolore magna aliqua. Quis ipsum
+suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+</p>
+<div class="footer__social">
+<a href="#"><span class="social_facebook"></span></a>
+<a href="#"><span class="social_twitter"></span></a>
+<a href="#"><span class="social_linkedin"></span></a>
+<a href="#"><span class="social_pinterest"></span></a>
+</div>
+</div>
+</div>
+<div class="col-lg-2 offset-lg-1 col-md-6 col-sm-6">
+<div class="footer__widget">
+<h5>Quick links</h5>
+<ul>
+<li><a href="#">History</a></li>
+<li><a href="#">Our Staff</a></li>
+<li><a href="#">Our Partners</a></li>
+<li><a href="#">Blog</a></li>
+</ul>
+</div>
+</div>
+ <div class="col-lg-2 col-md-6 col-sm-6">
+<div class="footer__widget">
+<h5>Services</h5>
+<ul>
+<li><a href="#">Air Shipping</a></li>
+<li><a href="#">Expert Staff</a></li>
+<li><a href="#">Ground Shipping</a></li>
+<li><a href="#">Logistic Services</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="footer__widget">
+<h5>Contacts</h5>
+<ul class="address">
+<li><span class="icon_pin"></span> 450 Strand, Charing Cross, US</li>
+<li><span class="icon_phone"></span> +44 20 7930 8205</li>
+<li><span class="icon_mail"></span> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="71181f171e5f121e1d1e1d181331161c10181d5f121e1c">[email&#160;protected]</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="footer__copyright">
+<div class="container">
+<div class="row">
+<div class="col-lg-9 col-md-8">
+<div class="footer__copyright__text">
+
+<p>Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved<a href="https://colorlib.com" target="_blank" rel="nofollow noopener">Privacy Policy</a> | <a href="https://colorlib.com" target="_blank" rel="nofollow noopener">Refund Policy</a>
+</p>
+
+</div>
+</div>
+<div class="col-lg-3 col-md-4">
+<div class="footer__copyright__links">
+<a href="#">Client Login</a>
+<a href="#">Join Team</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+<div class="search-model">
+<div class="h-100 d-flex align-items-center justify-content-center">
+<div class="search-close-switch">+</div>
+<form class="search-model-form">
+<input type="text" id="search-input" placeholder="Search here.....">
+</form>
+</div>
+</div>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
