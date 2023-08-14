@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Bright Star</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+    .ibar{
+      font-family: 'Source Sans Pro' , sans-serif;
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      z-index: 10;
+    }
+     
+    .ibar a{
+      text-decoration: none;
+      width: 130px;
+      /* background: #3b5999; */
+      color: #fff;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 2px;
+      font-size: 13px;
+      transform: translateX(-95px);
+      -webkit-transform: translateX(-95px);
+      -ms-transform: translateX(-95px);
+      transition: 0.3s linear;
+      -webkit-transition: 0.3s linear;
+      -ms-transition: 0.3s linear;
+    }
+    .ibar a i{
+      padding-left: 20px;
+      font-size: 25px;
+      animation: letszoom 3s linear alternate-reverse infinite;
+    }
+
+    .ibar a:hover{
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+    }
+    @keyframes letszoom{
+      from{
+        transform: scale(0.8);
+      }
+      to{
+        transform: scale(1);
+      }
+    }
+
+    .facebk{
+      background: #3b5999;
+    }
+    .insta{
+      background: #e4405f;
+    }
+    .twi{
+      background: #00aced;
+    }
+    .utube{
+      background: #cd201f;
+    }
+    .linkedin{
+      background: #0077B5;
+    }
+    .tik{
+      background: #212121;
+    }
+    .mail{
+      background: #FF8F00;
+    }
+</style>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+<link rel="stylesheet" href="css/nice-select.css" type="text/css">
+<link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+<link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script nonce="e66bc024-0f72-463f-a1fe-18aae23a65ea">(function(w,d){!function(a,b,c,d){a[c]=a[c]||{};a[c].executed=[];a.zaraz={deferred:[],listeners:[]};a.zaraz.q=[];a.zaraz._f=function(e){return function(){var f=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:f})}};for(const g of["track","set","debug"])a.zaraz[g]=a.zaraz._f(g);a.zaraz.init=()=>{var h=b.getElementsByTagName(d)[0],i=b.createElement(d),j=b.getElementsByTagName("title")[0];j&&(a[c].t=b.getElementsByTagName("title")[0].text);a[c].x=Math.random();a[c].w=a.screen.width;a[c].h=a.screen.height;a[c].j=a.innerHeight;a[c].e=a.innerWidth;a[c].l=a.location.href;a[c].r=b.referrer;a[c].k=a.screen.colorDepth;a[c].n=b.characterSet;a[c].o=(new Date).getTimezoneOffset();if(a.dataLayer)for(const n of Object.entries(Object.entries(dataLayer).reduce(((o,p)=>({...o[1],...p[1]})),{})))zaraz.set(n[0],n[1],{scope:"page"});a[c].q=[];for(;a.zaraz.q.length;){const q=a.zaraz.q.shift();a[c].q.push(q)}i.defer=!0;for(const r of[localStorage,sessionStorage])Object.keys(r||{}).filter((t=>t.startsWith("_zaraz_"))).forEach((s=>{try{a[c]["z_"+s.slice(7)]=JSON.parse(r.getItem(s))}catch{a[c]["z_"+s.slice(7)]=r.getItem(s)}}));i.referrerPolicy="origin";i.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a[c])));h.parentNode.insertBefore(i,h)};["complete","interactive"].includes(b.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+<body>
+
+    <div class="ibar">
+    <a href="#" class="facebk">
+      Visit Us<i class="fa-brands fa-square-facebook"></i>
+    </a>
+    <a href="#" class="insta">
+      Visit Us<i class="fa-brands fa-square-instagram"></i>
+    </a>
+    <a href="#" class="twi">
+      Visit Us<i class="fa-brands fa-square-twitter"></i>
+    </a>
+    <a href="#" class="tik">
+      Visit Us<i class="fa-brands fa-tiktok"></i>
+    </a>
+    <a href="#" class="mail">
+      Visit Us<i class="fa-sharp fa-solid fa-envelope"></i>
+    </a>
+    <a href="#" class="utube">
+      Visit Us<i class="fa-brands fa-square-youtube"></i>
+    </a>
+    <a href="#" class="linkedin">
+      Visit Us<i class="fa-brands fa-linkedin"></i>
+    </a>
+  </div>
+<div id="preloder">
+<div class="loader"></div>
+</div>
+
+<div class="offcanvas-menu-overlay"></div>
+<div class="offcanvas-menu-wrapper">
+<div class="offcanvas__search__option">
+<span class="icon_search search-switch"></span>
+</div>
+<div class="offcanvas__logo">
+<a href="./index.html"><script type="text/javascript" style="display:none">
+//<![CDATA[
+window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
+//]]>
+</script>
+<script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
+<img data-cfsrc="img/footer-logo.png" alt="" style="display:none;visibility:hidden;"><noscript><img src="img/footer-logo.png" alt=""></noscript></a>
+</div>
+<div id="mobile-menu-wrap"></div>
+<ul class="offcanvas__widget">
+<li><span class="icon_phone"></span> +44 20 7930 8205</li>
+<li><span class="icon_pin"></span> 450 Strand, Charing Cross, London</li>
+</ul>
+<div class="offcanvas__auth">
+<a href="#"><span class="icon_profile"></span> Register or Sign in</a>
+</div>
+<div class="offcanvas__social">
+<a href="#"><span class="social_facebook"></span></a>
+<a href="#"><span class="social_twitter"></span></a>
+<a href="#"><span class="social_linkedin"></span></a>
+<a href="#"><span class="social_pinterest"></span></a>
+</div>
+</div>
+
+
+<header class="header">
+<div class="header__top">
+<div class="container">
+<div class="row">
+<div class="col-lg-9 offset-lg-3">
+<ul class="header__top__widget">
+<li><span class="icon_phone"></span> +44 20 7930 8205</li>
+<li><span class="icon_pin"></span> 450 Strand, Charing Cross, London</li>
+</ul>
+<div class="header__top__right">
+<div class="header__top__right__auth">
+<a href="#"><span class="icon_profile"></span> Register or Sign in</a>
+</div>
+<div class="header__top__right__social">
+<a href="#"><span class="social_facebook"></span></a>
+<a href="#"><span class="social_twitter"></span></a>
+<a href="#"><span class="social_linkedin"></span></a>
+<a href="#"><span class="social_pinterest"></span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="header__options">
+<div class="container">
+<div class="row">
+<div class="col-lg-2">
+<div class="header__logo">
+<a href="./index.html"><img data-cfsrc="img/logo.png" alt="" style="height: 50px;"></a>
+</div>
+</div>
+<div class="col-lg-10" style="padding-left: 100px;">
+    <nav class="header__menu mobile-menu">
+<ul>
+<li><a href="./index.html">Home</a></li>
+<li><a href="./about.html">About Us</a></li>
+<li><a href="./services.html">Services</a>
+<ul class="dropdown">
+<li><a href="./about.html">Elderly Transportation</a></li>
+<li><a href="./services-details.html">Bed to Bed Transportation</a></li>
+<li><a href="./blog-details.html">Strecher Transport</a></li>
+<li><a href="./about.html">Non-Emergency Medical Transportation</a></li>
+<li><a href="./about.html">Wheelchair Transportation</a></li>
+<li><a href="./about.html">Special Tips</a></li>
+<li><a href="./about.html">Ambulatory Transport</a></li>
+<li><a href="./about.html">Long Distance Transportation</a></li>
+<li><a href="./about.html">Bariatric Transportation</a></li>
+
+</ul>
+</li>
+<li><a href="#">Testinomials</a>
+<ul class="dropdown">
+<li><a href="./Feedback.html">Feedback Survey</a></li>
+</ul>
+</li>
+<li><a href="./discount.html">Discounts</a></li>
+<li><a href="#">Service Areas</a>
+<ul class="dropdown">
+<li><a href="./about.html">Ashburn VA</a></li>
+<li><a href="./services-details.html">Dumfries VA</a></li>
+<li><a href="./blog-details.html">Fairfax VA</a></li>
+<li><a href="./blog-details.html">Herndon VA</a></li>
+<li><a href="./blog-details.html">Leesburg VA</a></li>
+<li><a href="./blog-details.html">Manassas VA</a></li>
+<li><a href="./blog-details.html">Sterling VA</a></li>
+<li><a href="./blog-details.html">Alexandria VA</a></li>
+<li><a href="./blog-details.html">Annandale VA</a></li>
+<li><a href="./blog-details.html">Arlington VA</a></li>
+<li><a href="./blog-details.html">Bristow VA</a></li>
+<li><a href="./blog-details.html">Burke VA</a></li>
+<li><a href="./blog-details.html">Centreville VA</a></li>
+<li><a href="./blog-details.html">Chantilly VA</a></li>
+<li><a href="./blog-details.html">Falls Church VA</a></li>
+<li><a href="./blog-details.html">Fredrickburg VA</a></li>
+<li><a href="./blog-details.html">Gainesville VA</a></li>
+<li><a href="./blog-details.html">Mc Lean VA</a></li>
+<li><a href="./blog-details.html">Reston VA</a></li>
+<li><a href="./blog-details.html">Springfield</a></li>
+<li><a href="./blog-details.html">Stafford VA</a></li>
+<li><a href="./blog-details.html">Vienna VA</a></li>
+<li><a href="./blog-details.html">Woodbridge VA</a></li>
+</ul>
+</li>
+<li class="active"><a href="./fleet.html">Our Fleet</a></li>
+<li><a href="./career.html">Career</a></li>
+<li><a href="./contact.html">Booking</a></li>
+<!--<li><a href="#">Brochure</a></li>-->
+</ul>
+</nav>
+</div>
+
+</div>
+</div>
+<div class="canvas__open"><i class="fa fa-bars"></i></div>
+</div>
+</header>
+
+
+<div class="breadcrumb-option set-bg" data-setbg="img/breadcrumb-bg.jpg">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="breadcrumb__text">
+<h2>About Bright Star Non Medical Transportation</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<section class="about-company spad">
+<div class="container">
+<div class="row">
+<div class="col-lg-5">
+<div class="section-title">
+  <p>A Small Introduction</p>
+<h2>Welcome to the Bright Star Non Medical Transportation</h2>
+<img src="/img/hero.jpg" alt="van"><br><br>
+<a href="/contact.html" class="primary-btn"><span>Call Us Now</span></a>
+<a href="#" class="primary-btn"><span>Download Business profile & Prices</span></a>
+</div>
+</div>
+<div class="col-lg-5 offset-lg-2">
+<div class="about__company__title">
+<p>Started in 2022 as a family owned business, we provide professional, door-to-door non-emergency wheelchair transport which is available to the public throughout the tri-state area. Our specialized medical transportation responsibilities include but are not limited to: senior citizens, individuals who require the use of wheelchairs and parents and children with special needs. Our nemt services are for private citizens, hospitals, doctors, insurance companies/HMOs, nursing or private group homes, and assisted living facilities. We assist clients from the time of pick-up to drop-off and make sure that they get there safely and on-time.</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-5">
+<div class="section-title">
+  <p>Why?</p>
+<h2>Bright Star Non Medical Transportation</h2>
+<div class="about__company__title">
+<p>Our team endeavors to provide the very best nemt transportation service for all of our customer/ partners, including dependability, convenience, safety and value, while exhibiting servant leadership to all.
+
+VA Transportation Healthcare LLC was founded to bring reliable, quality nemt transportation services to those who are in need of assisted transportation,  VA Transportation Healthcare LLC is dedicated to serving our customers through professional transportation that fills the gap between personal and public transportation.
+
+VA Transportation Healthcare LLC will provide the most dependable wheelchair transportation of the highest quality and value with direct focus on meeting the needs of our clients and will respond with promptness, sensitivity and always with the utmost integrity. At  VA Transportation Healthcare LLC, we strive to exceed your expectations.
+
+All of our staff display photo ID badges, and in standard company uniforms. Our entire staff is screened and certified comfort and safety is our primary concern.</p>
+</div>
+</div>
+</div>
+<div class="col-lg-5 offset-lg-2">
+  <p>Choose the best</p>
+<h2>Wheel Chair transportation</h2>
+<div class="about__company__title">
+<p>Our highly trained staff members are dedicated to respond with promptness, sensitivity and integrity. We only hire professionally trained drivers who are thoughtful and compassionate and truly empathize and understand the difficulties that arise for persons with limited mobility. Each driver goes through back ground check and has completed extensive training in the handling of patients with special needs to insure safe and proper transfer. Our staff also understands the necessity of maintaining patient confidentiality.  VA Transportation Healthcare LLC is the leading wheelchair transport in Washington DC, Virginia & Maryland, call us for more details or to schedule an appointment.</p></div>
+</div>
+</div>
+<div class="container">
+  <h2>Our Refund Policy</h2><br>
+  <ul>
+    <li>
+      For wheelchair and ambulatory transportation services, customer must cancel 72 hours prior to service date for full refund
+    </li>
+    <li>For stretcher transportation services, customer must cancel 72 hours prior to service date to claim 50% refund.</li></ul>
+  </div>
+<!--<div class="about__company__pic">
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-6">
+<img data-cfsrc="img/about/ac-1.jpg" alt="" style="display:none;visibility:hidden;"><noscript><img src="img/about/ac-1.jpg" alt=""></noscript>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-6">
+<img data-cfsrc="img/about/ac-2.jpg" alt="" style="display:none;visibility:hidden;"><noscript><img src="img/about/ac-2.jpg" alt=""></noscript>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-6">
+<img data-cfsrc="img/about/ac-3.jpg" alt="" style="display:none;visibility:hidden;"><noscript><img src="img/about/ac-3.jpg" alt=""></noscript>
+</div>
+</div>
+</div>-->
+<!--f<div class="about__company__counter">
+<div class="row">
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="counter__item">
+<img data-cfsrc="img/about/ci-1.png" alt="" style="display:none;visibility:hidden;"><noscript><img src="img/about/ci-1.png" alt=""></noscript>
+<div class="counter__item__num">
+<h2 class="c_num">9123</h2>
+</div>
+<h5>Employees in Team</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.</p>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="counter__item">
+<img data-cfsrc="img/about/ci-2.png" alt="" style="display:none;visibility:hidden;"><noscript><img src="img/about/ci-2.png" alt=""></noscript>
+<div class="counter__item__num">
+<h2 class="c_num">70102</h2>
+<strong>km</strong>
+</div>
+<h5>Kilometer Travel Weekly</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.</p>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="counter__item">
+<img data-cfsrc="img/about/ci-3.png" alt="" style="display:none;visibility:hidden;"><noscript><img src="img/about/ci-3.png" alt=""></noscript>
+<div class="counter__item__num">
+<h2 class="c_num">1254</h2>
+</div>
+<h5>Worldwide Clients</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.</p>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="counter__item">
+<img data-cfsrc="img/about/ci-4.png" alt="" style="display:none;visibility:hidden;"><noscript><img src="img/about/ci-4.png" alt=""></noscript>
+<div class="counter__item__num">
+<h2 class="c_num">20254</h2>
+</div>
+<h5>Projects Done</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.</p>
+</div>
+</div>
+</div>
+</div>-->
+</div>
+</section>
+
+
+<section class="chooseus spad">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="chooseus__text">
+<div class="section-title">
+<span>Our Benefit</span>
+<h2>Why People Choose Us?</h2>
+</div>
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="chooseus__item">
+<div class="chooseus__item__icon">
+<img data-cfsrc="img/chooseus/ci-1.png" alt="" style="display:none;visibility:hidden;"><noscript><img src="img/chooseus/ci-1.png" alt=""></noscript>
+</div>
+<div class="chooseus__item__text">
+<h5>Warehouse Storage</h5>
+<p>Order tendering is an initial stage of the transportation process.</p>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="chooseus__item">
+<div class="chooseus__item__icon">
+<img data-cfsrc="img/chooseus/ci-2.png" alt="" style="display:none;visibility:hidden;"><noscript><img src="img/chooseus/ci-2.png" alt=""></noscript>
+</div>
+<div class="chooseus__item__text">
+<h5>Security Cargo</h5>
+<p>While your freight is in transit, a 3PL tracks and manages it.</p>
+</div>
+</div> 
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="chooseus__item">
+<div class="chooseus__item__icon">
+<img data-cfsrc="img/chooseus/ci-3.png" alt="" style="display:none;visibility:hidden;"><noscript><img src="img/chooseus/ci-3.png" alt=""></noscript>
+</div>
+<div class="chooseus__item__text">
+<h5>Easy Payment</h5>
+<p>After tendering the load, freight brokers will place your.</p>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="chooseus__item">
+<div class="chooseus__item__icon">
+<img data-cfsrc="img/chooseus/ci-4.png" alt="" style="display:none;visibility:hidden;"><noscript><img src="img/chooseus/ci-4.png" alt=""></noscript>
+</div>
+<div class="chooseus__item__text">
+<h5>Fast Delivery</h5>
+<p>Carrier agrees to spot or drop trailers or vehicles at.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="chooseus__pic set-bg" data-setbg="img/chooseus/chooseus-pic.png"></div>
+</div>
+</section>
+
+
+<section class="history spad">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-6">
+<div class="history__item">
+<span>1</span>
+<h2>History</h2>
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have
+suffered alteration in some form, by injected humour.</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="history__item">
+<span>2</span>
+<h2>Mission</h2>
+<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+model text, and a search for us will uncover.</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="history__item">
+<span>3</span>
+<h2>Vission</h2>
+<p>It is a long established fact that a reader will be distracted by the readable content of a
+page when looking at its layout.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="callto spad set-bg" data-setbg="img/call-bg.jpg">
+<div class="container">
+<div class="row d-flex justify-content-center">
+<div class="col-lg-8">
+<div class="callto__text text-center">
+<h2>You have one number to call, receive one reconciled invoice for all Austtralian </h2>
+<a href="#" class="primary-btn"><span>Call Us Now</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="team spad">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 text-center">
+<div class="section-title">
+<span>Our expert</span>
+<h2>Meet Our Team Member</h2>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
+<div class="team__item__title">
+<h6>Milley cyrus / <span>Support</span></h6>
+</div>
+<ul class="team__item__social">
+<li><a href="#"><span class="social_facebook"></span></a></li>
+<li><a href="#"><span class="social_twitter"></span></a></li>
+<li><a href="#"><span class="social_linkedin"></span></a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="team__item set-bg" data-setbg="img/team/team-2.jpg">
+<div class="team__item__title">
+<h6>John Smith / <span>Support</span></h6>
+</div>
+<ul class="team__item__social">
+<li><a href="#"><span class="social_facebook"></span></a></li>
+<li><a href="#"><span class="social_twitter"></span></a></li>
+<li><a href="#"><span class="social_linkedin"></span></a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="team__item set-bg" data-setbg="img/team/team-3.jpg">
+<div class="team__item__title">
+<h6>Becky Taylor / <span>Support</span></h6>
+</div>
+<ul class="team__item__social">
+<li><a href="#"><span class="social_facebook"></span></a></li>
+<li><a href="#"><span class="social_twitter"></span></a></li>
+<li><a href="#"><span class="social_linkedin"></span></a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="team__item set-bg" data-setbg="img/team/team-4.jpg">
+<div class="team__item__title">
+<h6>Martin Tom / <span>Support</span></h6>
+</div>
+<ul class="team__item__social">
+<li><a href="#"><span class="social_facebook"></span></a></li>
+<li><a href="#"><span class="social_twitter"></span></a></li>
+<li><a href="#"><span class="social_linkedin"></span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<footer class="footer">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="footer__about">
+<div class="footer__logo">
+<a href="/index.html"><img data-cfsrc="img/logo.png" alt="" style="display:none;visibility:hidden;"><noscript><img src="img/logo.png" alt=""></noscript></a>
+</div>
+<p>Consectetur adipiscing elit, sed do eiusmod tempor labore et dolore magna aliqua. Quis ipsum
+suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+</p>
+<div class="footer__social">
+<a href="#"><span class="social_facebook"></span></a>
+<a href="#"><span class="social_twitter"></span></a>
+<a href="#"><span class="social_linkedin"></span></a>
+<a href="#"><span class="social_pinterest"></span></a>
+</div>
+</div>
+</div>
+<div class="col-lg-2 offset-lg-1 col-md-6 col-sm-6">
+<div class="footer__widget">
+<h5>Quick links</h5>
+<ul>
+<li><a href="/contact.html">Bookings</a></li>
+<li><a href="/services.html">Our Services</a></li>
+<li><a href="/fleet.html">Our Fleet</a></li>
+<li><a href="/blog.html">Blog</a></li>
+<li><a href="#">Brochure</a></li>
+</ul>
+</div>
+</div>
+ <div class="col-lg-2 col-md-6 col-sm-6">
+<div class="footer__widget">
+<h5>Interesting Infos</h5>
+<ul>
+<li><p style="color: gainsboro;">We are commited to providing High Quality Service to our customers through out virginia, maryland and washington DC metro areas.</p></li>
+<!--<li><a href="#">Expert Staff</a></li>
+<li><a href="#">Ground Shipping</a></li>
+<li><a href="#">Logistic Services</a></li>-->
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="footer__widget">
+<h5>VA Transportation HEALTHCARE</h5>
+<ul class="address">
+<li><span class="icon_pin"></span> 8802 sudley road MANASSAS VA 20110</li>
+<li><span class="icon_phone"></span> +1 571 450 1300</li>
+<li><span class="icon_mail"></span> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="71181f171e5f121e1d1e1d181331161c10181d5f121e1c">[email&#160;protected]</a></li>
+<li><p style="color: gainsboro;">DMV Certificate #601</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="footer__copyright">
+<div class="container">
+<div class="row">
+<div class="col-lg-9 col-md-8">
+<div class="footer__copyright__text">
+
+<p>Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved | <a href="https://colorlib.com" target="_blank" rel="nofollow noopener">Privacy Policy</a> | <a href="https://colorlib.com" target="_blank" rel="nofollow noopener">Refund Policy</a>
+</p>
+</div>
+</div>
+<div class="col-lg-3 col-md-4">
+<div class="footer__copyright__links">
+    <div class="offcanvas__social">
+<a href="#"><span class="social_facebook"></span></a>
+<a href="#"><span class="social_twitter"></span></a>
+<a href="#"><span class="social_linkedin"></span></a>
+<a href="#"><span class="social_pinterest"></span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+<div class="search-model">
+<div class="h-100 d-flex align-items-center justify-content-center">
+<div class="search-close-switch">+</div>
+<form class="search-model-form">
+<input type="text" id="search-input" placeholder="Search here.....">
+</form>
+</div>
+</div>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
