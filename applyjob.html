@@ -208,7 +208,7 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
 
 </ul>
 </li>
-<li><a href="#">Testinomials</a>
+<li><a href="testimonials.html">Testinomials</a>
 <ul class="dropdown">
 <li><a href="./Feedback.html">Feedback Survey</a></li>
 </ul>
@@ -243,7 +243,7 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
 </li>
 <li><a href="./fleet.html">Our Fleet</a></li>
 <li><a href="./career.html">Career</a></li>
-<li class="active"><a href="./contact.html">Booking</a></li>
+<li class="active"><a href="./contact.html">Reserve Ride</a></li>
 <!--<li><a href="#">Brochure</a></li>-->
 </ul>
 </nav>
@@ -264,14 +264,14 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
 <div style="text-align: center;">
           <h2 style="text-align: center; padding-top: 4%;">BRIGHT STAR NON-MEDICAL TRANSPORTATION LLC</h2>
           <h2 style="text-align: center;">APPLY FOR JOB</h2>
-          <!--<p style="text-align: center;">Up to 20% Off at Online Booking for Wheelchair/Stretcher Van and Ambulatory Services</p>
-          <button type="button" class="btn btn-success" style="color: white; background-color: #FF8F00;">New Reservation</button>
-          <button type="button" class="btn btn-success" style="color: white; background-color: #FF8F00;">Calculator</button>-->
+          <!--<p style="text-align: center;">Up to 20% Off at Online Booking for Wheelchair/Stretcher Van and Ambulatory Services</p> -->
+          <!--<button type="button" class="btn btn-success" style="color: white; background-color: #FF8F00;">New Reservation</button>-->
+         <!-- <button type="button" class="btn btn-success" style="color: white; background-color: #FF8F00;">Calculator</button> -->
         </div>
         <div class="container-fluid" style="padding-left: 25%; padding-right: 25%;">
           <h4>PERSONAL INFORMATION</h4> <br>
           <P>FIELDS WITH (*) ARE MANDATORY</P>
-            <form class = "data" name="data" id="data" action="http://192.168.0.36:8000/">
+            <form class = "data" name="data" id="data" action="http://172.20.10.10:8000/">
             <div class="form-group" style="padding-top: 1%;">
               <label for="exampleInput">Name *</label>
               <input type="text" name="Patient_name" class="form-control form-control-lg" id="exampleInput" placeholder="Enter the name" required>
@@ -291,39 +291,39 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
             
             <div class="form-group" style="padding-top: 2%;">
               <label for="exampleInput7">Address *</label>
-              <input type="text" name="Pickup_Address" class="form-control form-control-lg" id="exampleInput7" placeholder="" required>
+              <input type="text" name="address" class="form-control form-control-lg" id="exampleInput7" placeholder="" required>
               <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
             </div>
             <div class="form-group" style="padding-top: 2%;">
               <label for="exampleInput7">Salary Desired *</label>
-              <input type="text" name="Pickup_Address" class="form-control form-control-lg" id="exampleInput7" placeholder="" required>
+              <input type="text" name="salary_desired" class="form-control form-control-lg" id="exampleInput7" placeholder="" required>
               <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
             </div><br>
             <div class="form-group" style="padding-top: 2% ;">
               <label for="exampleInput10">Are you authorized to work in the U.S. on an unrestricted basis? *</label><br>
-              <select name="Covid" class="form-control form-control-lg">
+              <select name="work_authorisation" class="form-control form-control-lg">
                 <option>No</option>
                 <option selected>Yes</option>
               </select>
             </div><br><br>
             <h5>Qualifications</h5><br>
             <div class="form-floating">
-              <textarea class="form-control" name="Comments" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <textarea class="form-control" name="qualifications" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
               <label for="floatingTextarea2"></label>
             </div> <br>
             <h5>Special Skills</h5><br>
             <div class="form-floating">
-              <textarea class="form-control" name="Comments" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <textarea class="form-control" name="special_skills" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
               <label for="floatingTextarea2"></label>
             </div><br>
             <h5>Reference</h5><br>
             <div class="form-floating">
-              <textarea class="form-control" name="Comments" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <textarea class="form-control" name="references" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
               <label for="floatingTextarea2"></label>
             </div><br>
             <h5>Work History</h5><br>
             <div class="form-floating">
-              <textarea class="form-control" name="Comments" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <textarea class="form-control" name="work_history" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
               <label for="floatingTextarea2"></label>
             </div><br>
             <!--<p>Please note that by submitting this inquiry form, you agree to our <a href="#" style="color: #0077B5;">privacy policy</a> and <a href="#" style="color: #0077B5;">refund policy</a></p>   --> 
@@ -355,7 +355,7 @@ strict attention.</p>-->
 </div>
 <div class="contact__widget__text">
 <h6>Address</h6>
-<p>450 Strand, Charing Cross, US</p>
+<p>5312 Peter's Creek Road Suite B, Roanoke, VA, 24019</p>
 </div>
 </li>
 <li>
@@ -364,7 +364,7 @@ strict attention.</p>-->
 </div>
 <div class="contact__widget__text">
 <h6>Phone Number</h6>
-<p>+44 20 7930 8205</p>
+<p>+1 540-380-0024</p>
 </div>
 </li>
 <li>

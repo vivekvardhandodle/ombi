@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Bright Star</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
@@ -78,10 +83,6 @@
     }
 </style>
 
-
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
 <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
@@ -91,6 +92,7 @@
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <script nonce="8f1c6209-87f4-4267-95de-76017ad88be2">(function(w,d){!function(a,b,c,d){a[c]=a[c]||{};a[c].executed=[];a.zaraz={deferred:[],listeners:[]};a.zaraz.q=[];a.zaraz._f=function(e){return function(){var f=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:f})}};for(const g of["track","set","debug"])a.zaraz[g]=a.zaraz._f(g);a.zaraz.init=()=>{var h=b.getElementsByTagName(d)[0],i=b.createElement(d),j=b.getElementsByTagName("title")[0];j&&(a[c].t=b.getElementsByTagName("title")[0].text);a[c].x=Math.random();a[c].w=a.screen.width;a[c].h=a.screen.height;a[c].j=a.innerHeight;a[c].e=a.innerWidth;a[c].l=a.location.href;a[c].r=b.referrer;a[c].k=a.screen.colorDepth;a[c].n=b.characterSet;a[c].o=(new Date).getTimezoneOffset();if(a.dataLayer)for(const n of Object.entries(Object.entries(dataLayer).reduce(((o,p)=>({...o[1],...p[1]})),{})))zaraz.set(n[0],n[1],{scope:"page"});a[c].q=[];for(;a.zaraz.q.length;){const q=a.zaraz.q.shift();a[c].q.push(q)}i.defer=!0;for(const r of[localStorage,sessionStorage])Object.keys(r||{}).filter((t=>t.startsWith("_zaraz_"))).forEach((s=>{try{a[c]["z_"+s.slice(7)]=JSON.parse(r.getItem(s))}catch{a[c]["z_"+s.slice(7)]=r.getItem(s)}}));i.referrerPolicy="origin";i.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a[c])));h.parentNode.insertBefore(i,h)};["complete","interactive"].includes(b.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
 <body>
+
     <div class="ibar">
     <a href="#" class="facebk">
       Visit Us<i class="fa-brands fa-square-facebook"></i>
@@ -114,6 +116,9 @@
       Visit Us<i class="fa-brands fa-linkedin"></i>
     </a>
   </div>
+
+
+  
 <div id="preloder">
 <div class="loader"></div>
 </div>
@@ -128,8 +133,8 @@
 </div>
 <div id="mobile-menu-wrap"></div>
 <ul class="offcanvas__widget">
-<li><span class="icon_phone"></span> +44 20 7930 8205</li>
-<li><span class="icon_pin"></span> 450 Strand, Charing Cross, London</li>
+<li><span class="icon_phone"></span> +1 540-380-0024</li>
+<li><span class="icon_pin"></span> 5312 Peter's Creek Road Suite B, Roanoke, VA, 24019</li>
 </ul>
 <div class="offcanvas__auth">
 <a href="#"><span class="icon_profile"></span> Register or Sign in</a>
@@ -149,8 +154,8 @@
 <div class="row">
 <div class="col-lg-9 offset-lg-3">
 <ul class="header__top__widget">
-<li><span class="icon_phone"></span> +1 234 567 8901</li>
-<li><span class="icon_pin"></span> Fairfax, VA, USA</li>
+<li><span class="icon_phone"></span> +1 540-380-0024</li>
+<li><span class="icon_pin"></span> 5312 Peter's Creek Road Suite B, Roanoke, VA, 24019</li>
 </ul>
 <div class="header__top__right">
 <div class="header__top__right__social">
@@ -169,13 +174,13 @@
 <div class="row">
 <div class="col-lg-2">
 <div class="header__logo">
-<a href="./index.html"><img src="img/logo.png" alt="" style="height: 150px;"></a>
+<a href="./index.html"><img src="img/logo.png" alt="" style="height: 50px;"></a>
 </div>
 </div>
 <div class="col-lg-10" style="padding-left: 100px;">
-    <nav class="header__menu mobile-menu">
+<nav class="header__menu mobile-menu">
 <ul>
-<li><a href="./index.html">Home</a></li>
+<li class="active"><a href="./index.html">Home</a></li>
 <li><a href="./about.html">About Us</a></li>
 <li><a href="./services.html">Services</a>
 <ul class="dropdown">
@@ -191,7 +196,7 @@
 
 </ul>
 </li>
-<li class="active"><a href="#">Testinomials</a>
+<li><a href="/testimonials.html">Testinomials</a>
 <ul class="dropdown">
 <li><a href="./Feedback.html">Feedback Survey</a></li>
 </ul>
@@ -199,34 +204,34 @@
 <li><a href="./discount.html">Discounts</a></li>
 <li><a href="#">Service Areas</a>
 <ul class="dropdown">
-<li><a href="./about.html">Ashburn VA</a></li>
-<li><a href="./services-details.html">Dumfries VA</a></li>
-<li><a href="./blog-details.html">Fairfax VA</a></li>
-<li><a href="./blog-details.html">Herndon VA</a></li>
-<li><a href="./blog-details.html">Leesburg VA</a></li>
-<li><a href="./blog-details.html">Manassas VA</a></li>
-<li><a href="./blog-details.html">Sterling VA</a></li>
-<li><a href="./blog-details.html">Alexandria VA</a></li>
-<li><a href="./blog-details.html">Annandale VA</a></li>
-<li><a href="./blog-details.html">Arlington VA</a></li>
-<li><a href="./blog-details.html">Bristow VA</a></li>
-<li><a href="./blog-details.html">Burke VA</a></li>
-<li><a href="./blog-details.html">Centreville VA</a></li>
-<li><a href="./blog-details.html">Chantilly VA</a></li>
-<li><a href="./blog-details.html">Falls Church VA</a></li>
-<li><a href="./blog-details.html">Fredrickburg VA</a></li>
-<li><a href="./blog-details.html">Gainesville VA</a></li>
-<li><a href="./blog-details.html">Mc Lean VA</a></li>
-<li><a href="./blog-details.html">Reston VA</a></li>
-<li><a href="./blog-details.html">Springfield</a></li>
-<li><a href="./blog-details.html">Stafford VA</a></li>
-<li><a href="./blog-details.html">Vienna VA</a></li>
-<li><a href="./blog-details.html">Woodbridge VA</a></li>
+<li><a href="areas.html?areaName=Ashburn+VA">Ashburn VA</a></li>
+<li><a href="areas.html?areaName=Dumfries+VA">Dumfries VA</a></li>
+<li><a href="areas.html?areaName=Fairfax+VA">Fairfax VA</a></li>
+<li><a href="areas.html?areaName=Herndon+VA">Herndon VA</a></li>
+<li><a href="areas.html?areaName=Leesburg+VA">Leesburg VA</a></li>
+<li><a href="areas.html?areaName=Manassas+VA">Manassas VA</a></li>
+<li><a href="areas.html?areaName=Sterling+VA">Sterling VA</a></li>
+<li><a href="areas.html?areaName=Alexandria+VA">Alexandria VA</a></li>
+<li><a href="areas.html?areaName=Annandale+VA">Annandale VA</a></li>
+<li><a href="areas.html?areaName=Arlington+VA">Arlington VA</a></li>
+<li><a href="areas.html?areaName=Bristow+VA">Bristow VA</a></li>
+<li><a href="areas.html?areaName=Burke+VA">Burke VA</a></li>
+<li><a href="areas.html?areaName=Centreville+VA">Centreville VA</a></li>
+<li><a href="areas.html?areaName=Chantilly+VA">Chantilly VA</a></li>
+<li><a href="areas.html?areaName=Falls+Church+VA">Falls Church VA</a></li>
+<li><a href="areas.html?areaName=Fredrickburg+VA">Fredrickburg VA</a></li>
+<li><a href="areas.html?areaName=Gainesville+VA">Gainesville VA</a></li>
+<li><a href="areas.html?areaName=Mc+Lean+VA">Mc Lean VA</a></li>
+<li><a href="areas.html?areaName=Reston+VA">Reston VA</a></li>
+<li><a href="areas.html?areaName=Springfield+VA">Springfield</a></li>
+<li><a href="areas.html?areaName=Stafford+VA">Stafford VA</a></li>
+<li><a href="areas.html?areaName=Vienna+VA">Vienna VA</a></li>
+<li><a href="areas.html?areaName=Woodbridge+VA">Woodbridge VA</a></li>
 </ul>
 </li>
 <li><a href="./fleet.html">Our Fleet</a></li>
 <li><a href="./career.html">Career</a></li>
-<li><a href="./contact.html">Booking</a></li>
+<li><a href="./contact.html">Reserve Ride</a></li>
 <!--<li><a href="#">Brochure</a></li>-->
 </ul>
 </nav>
@@ -236,7 +241,92 @@
 <div class="canvas__open"><i class="fa fa-bars"></i></div>
 </div>
 </header>
+
+             
+
+
+<!--<section class="projects spad">
+<div class="container">
+<div class="row">
+<div class="col-lg-7">
+<div class="section-title">
+<span>Our Projects</span>
+<h2>What We Have Done!</h2>
+</div>
+</div>
+<div class="col-lg-5">
+<div class="projects__all">
+<a href="#" class="primary-btn"><span>View All Projects</span></a>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="projects__slider owl-carousel">
+<div class="col-lg-4">
+<div class="projects__item">
+<div class="projects__item__pic">
+<img src="img/projects/projects-1.jpg" alt="">
+</div>
+<div class="projects__item__text">
+<h5><span>Freight Carrier</span></h5>
+<p>Investment Assets Properties have ready several locations around the world to take
+your free listings for any luxury property you have.</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="projects__item">
+<div class="projects__item__pic">
+<img src="img/projects/projects-2.jpg" alt="">
+ </div>
+<div class="projects__item__text">
+<h5><span>Freight Forwarder</span></h5>
+<p>Investment Assets Properties have ready several locations around the world to take
+your free listings for any luxury property you have.</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="projects__item">
+<div class="projects__item__pic">
+<img src="img/projects/projects-3.jpg" alt="">
+</div>
+<div class="projects__item__text">
+<h5><span>Import-Export</span></h5>
+<p>Investment Assets Properties have ready several locations around the world to take
+your free listings for any luxury property you have.</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="projects__item">
+<div class="projects__item__pic">
+<img src="img/projects/projects-4.jpg" alt="">
+</div>
+<div class="projects__item__text">
+<h5><span>Agricultural Truck</span></h5>
+<p>Investment Assets Properties have ready several locations around the world to take
+your free listings for any luxury property you have.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>-->
 <br>
+<!-- Box -->
+<div class="container-fluid" style="padding-left: 3%;padding-right: 3%;">
+<div class="container-box" style="border: 1px solid orangered;padding: 2%;">
+  <div class="information">
+    <p><span>LIMITED-TIME DISCOUNT OFFER</span>
+    BrightStar Non Medical Transportation Healthcare has reduced rates. Up to 30% off for limited time</p>
+    <a href="/discount.html" class="primary-btn"><span>See Rates</span></a>
+  </div>
+  
+</div>
+</div><br>
+
 <section class="testimonial spad set-bg" data-setbg="img/testimonial/testimonial-bg.jpg">
 <div class="container">
 <div class="row">
@@ -251,9 +341,9 @@
 <img src="img/testimonial/quote.png" alt="">
 <p>“Thank you for taking care of my grandmother for transportation to her doctor’s clinic. Everything went very smoothly..”</p>
 <div class="testimonial__item__author">
-<!--<div class="testimonial__item__author__pic">
+<div class="testimonial__item__author__pic">
 <img src="img/testimonial/ta-1.png" alt="">
-</div>-->
+</div>
 <div class="testimonial__item__author__text">
 <h5>Andrew Jacobs</h5>
 <span>January 2021</span>
@@ -264,9 +354,9 @@
 <img src="img/testimonial/quote.png" alt="">
 <p>“I needed to get my mother’s checked up. She cannot walk. I needed custom built vehicle. You guys did a good job. Recommended.”</p>
 <div class="testimonial__item__author">
-<!--<div class="testimonial__item__author__pic">
+<div class="testimonial__item__author__pic">
 <img src="img/testimonial/ta-1.png" alt="">
-</div>-->
+</div>
 <div class="testimonial__item__author__text">
 <h5>Smitha Patel</h5>
 <span>June 2021</span>
@@ -322,16 +412,169 @@
 </div>-->
 </div>
 </div>
-</section><br>
+</section>
 
 
+<section class="latest spad">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 text-center">
+<div class="section-title">
+<span>Insight and Trends</span>
+<h2>Our Recent Blogs</h2>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="latest__item">
+<div class="latest__item__pic set-bg" data-setbg="img/latest/latest-1.jpg">
+<div class="latest__item__pic__inner">
+<div class="label"><span>Guides</span></div>
+<h5>"Unlocking Mobility: Exploring the Power of NEMT Services for Enhanced Healthcare Access" 1
+"UNLOCKING MOBILITY: EXPLORING THE POWER OF NEMT SERVICES FOR ENHANCED HEALTHCARE ACCESS"</h5>
+</div>
+</div>
+<div class="latest__item__text">
+<ul>
+<li>by <span>Ryan Casey</span></li>
+<li>May 2, 2020</li>
+<li>20 Comment</li>
+</ul>
+<p>If your cat won't stop shredding the toilet paper and urinating on your couch, it could
+be a result</p>
+<a href="#">Read More</a>
+ </div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="latest__item">
+<div class="latest__item__pic set-bg" data-setbg="img/latest/latest-2.avif">
+<div class="latest__item__pic__inner">
+<div class="label"><span>Guides</span></div>
+<h5>HOW MEDICAL & NON-MEDICAL TRANSPORTATION HELPED PEOPLE IN RECENT YEARS</h5>
+</div>
+</div>
+<div class="latest__item__text">
+<ul>
+<li>by <span>Ryan Casey</span></li>
+<li>May 2, 2020</li>
+<li>20 Comment</li>
+</ul>
+<p>If your cat won't stop shredding the toilet paper and urinating on your couch, it could
+be a result</p>
+<a href="#">Read More</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="latest__item">
+<div class="latest__item__pic set-bg" data-setbg="img/latest/latest-3.avif">
+<div class="latest__item__pic__inner">
+<div class="label"><span>Guides</span></div>
+<h5>HOW TRANSPORTATION IMPACTS HEALTHCARE: EXPLORING THE CONNECTION</h5>
+</div>
+</div>
+<div class="latest__item__text">
+<ul>
+<li>by <span>Ryan Casey</span></li>
+<li>May 2, 2020</li>
+<li>20 Comment</li>
+</ul>
+<p>If your cat won't stop shredding the toilet paper and urinating on your couch, it could
+be a result</p>
+<a href="#">Read More</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="container">
+<div class="counter__content" style="text-align: center;">
+<div class="row">
+<div class="col" style="background-color: #f5b070;">
+<div class="counter__item">
+<!--<img src="img/about/ci-1.png" alt="">-->
+<div class="counter__item__num">
+<h2 class="c_num">24</h2>
+<h2>/7</h2>
+</div>
+<h5>Ready for service</h5>
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.</p>-->
+</div>
+</div>
+<div class="col" style="background-color: #f4c982;">
+<div class="counter__item">
+<!--<img src="img/about/ci-2.png" alt="">-->
+<div class="counter__item__num">
+<h2 class="c_num">100</h2>
+<h2>%</h2>
+</div>
+<h5>Satisfaction guaranteed</h5>
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ ut labore et dolore magna aliqua.</p>-->
+</div>
+</div>
+</div>
+</div>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="col">
+                <h5>No better place to get you healthy again</h5>
+                <h2>VISIT US</h2>
+                <h6>Do you usually need a wheelchair to move around for getting medical help? We provided assisted transportation services for non emergency medical purposes. We are are your wheelchair transport specialists. 
+                    Our drivers are trained specifically in assisting clients that require the use of wheelchairs. Our drivers are experienced and understand the needs of wheelchair users and provide personal assistance. 
+                    Whether you need help to the wheelchair, personal assistance, transporting medical documents to and from your doctor, our drivers are able to provide safe reliable <span style="color: #FF8F00;">non-emergency medical transportation</span> , and state-of-the-art wheelchair accessible vehicles 24/7.</h6>
+
+                <h6 style="color: #FF8F00;">Virginia Service Areas: <a href="#">Dumfries</a> | <a href="#">Gainesville</a> | <a href="#">Falls Church</a> | <a href="#">Vienna</a> | <a href="#">Fairfax</a> | <a href="#">Chantilly</a> | <a href="#">Herndon</a> | <a href="#">Fredericksburg</a> |
+                    <a href="#">Sterling</a> | <a href="#">Bristow</a> | <a href="#">Springfield</a> | <a href="#">Manassas</a> | <a href="#">Annandale</a> | <a href="#">Burke</a> | <a href="#">Ashburn</a> | <a href="#">McLean</a> | <a href="#">Leesburg</a> |
+                    <a href="#">Woodbridge</a> | <a href="#">Reston</a> | <a href="#">Centreville</a> | <a href="#">Alexandria</a> | <a href="#">Stafford</a> | <a href="#">Arlington</a> | <a href="#">Lorton</a> | <a href="#">Reston</a> | <a href="#">Spotsylvania</a> | <a href="#">Mount Vernon</a></h6>
+                    <div style="text-align: center;">
+                    <button style="color: white; background-color: #FF8F00;">Download Brochure</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="latest spad">
+    <div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="contact__map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49116.39176087041!2d-86.41867791216099!3d39.69977417971648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886ca48c841038a1%3A0x70cfba96bf847f0!2sPlainfield%2C%20IN%2C%20USA!5e0!3m2!1sen!2sbd!4v1586106673811!5m2!1sen!2sbd" height="460" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Box -->
+<div class="container-fluid" style="align-items: center;text-align: center;padding-left: 3%;padding-right: 3%;">
+<div class="container-box" style="border: 1px solid orangered;padding: 2%;">
+  <div class="information">
+    
+    <p>Give a call to VA Transportation Healthcare Services for safe and convenient medical/non-medical transportation needs. Call <span style="color: red;"><a href="#" onclick="dialPhoneNumber('5714501300')" style="color: red;">571-450-1300</a></span> now or book in advance.</p>
+  </div>
+  <a href="/contact.html" class="primary-btn"><span>Contact Us</span></a>
+</div>
+</div>
+<br><br>
 <footer class="footer">
 <div class="container">
 <div class="row">
 <div class="col-lg-4 col-md-6 col-sm-6">
 <div class="footer__about">
 <div class="footer__logo">
-<a href="#"><img src="img/footer-logo.png" alt=""></a>
+<a href="/index.html"><img src="img/logo.png" alt="" style="height: 150px;"></a>
 </div>
 <p>Consectetur adipiscing elit, sed do eiusmod tempor labore et dolore magna aliqua. Quis ipsum
 suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
@@ -348,31 +591,33 @@ suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel 
 <div class="footer__widget">
 <h5>Quick links</h5>
 <ul>
-<li><a href="#">History</a></li>
-<li><a href="#">Our Staff</a></li>
-<li><a href="#">Our Partners</a></li>
-<li><a href="#">Blog</a></li>
+<li><a href="/contact.html">Bookings</a></li>
+<li><a href="/services.html">Our Services</a></li>
+<li><a href="/fleet.html">Our Fleet</a></li>
+<li><a href="/blog.html">Blog</a></li>
+<li><a href="#">Brochure</a></li>
 </ul>
 </div>
 </div>
  <div class="col-lg-2 col-md-6 col-sm-6">
 <div class="footer__widget">
-<h5>Services</h5>
+<h5>Interesting Infos</h5>
 <ul>
-<li><a href="#">Air Shipping</a></li>
-<li><a href="#">Expert Staff</a></li>
+<li><p style="color: gainsboro;">We are commited to providing High Quality Service to our customers through out virginia, maryland and washington DC metro areas.</p></li>
+<!--<li><a href="#">Expert Staff</a></li>
 <li><a href="#">Ground Shipping</a></li>
-<li><a href="#">Logistic Services</a></li>
+<li><a href="#">Logistic Services</a></li>-->
 </ul>
 </div>
 </div>
 <div class="col-lg-3 col-md-6 col-sm-6">
 <div class="footer__widget">
-<h5>Contacts</h5>
+<h5>VA Transportation HEALTHCARE</h5>
 <ul class="address">
-<li><span class="icon_pin"></span> 450 Strand, Charing Cross, US</li>
-<li><span class="icon_phone"></span> +44 20 7930 8205</li>
+<li><span class="icon_pin"></span> 8802 sudley road MANASSAS VA 20110</li>
+<li><span class="icon_phone"></span> +1 571 450 1300</li>
 <li><span class="icon_mail"></span> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="71181f171e5f121e1d1e1d181331161c10181d5f121e1c">[email&#160;protected]</a></li>
+<li><p style="color: gainsboro;">DMV Certificate #601</p></li>
 </ul>
 </div>
 </div>
@@ -384,15 +629,18 @@ suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel 
 <div class="col-lg-9 col-md-8">
 <div class="footer__copyright__text">
 
-<p>Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved<a href="https://colorlib.com" target="_blank" rel="nofollow noopener">Privacy Policy</a> | <a href="https://colorlib.com" target="_blank" rel="nofollow noopener">Refund Policy</a>
+<p>Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved | <a href="https://colorlib.com" target="_blank" rel="nofollow noopener">Privacy Policy</a> | <a href="https://colorlib.com" target="_blank" rel="nofollow noopener">Refund Policy</a>
 </p>
-
 </div>
 </div>
 <div class="col-lg-3 col-md-4">
 <div class="footer__copyright__links">
-<a href="#">Client Login</a>
-<a href="#">Join Team</a>
+    <div class="offcanvas__social">
+<a href="#"><span class="social_facebook"></span></a>
+<a href="#"><span class="social_twitter"></span></a>
+<a href="#"><span class="social_linkedin"></span></a>
+<a href="#"><span class="social_pinterest"></span></a>
+</div>
 </div>
 </div>
 </div>
