@@ -373,6 +373,8 @@ ol {
 .header__logo {
 	position: relative;
 	padding: 59px 0 58px;
+	width: 200px;
+	margin-right: 58px;
 	margin-top: -44px;
 	z-index: 1;
 }
@@ -383,7 +385,7 @@ ol {
 	top: 0;
 	height: 100%;
 	width: 800px;
-	background: #ff5f2a;
+	background: #0190a8;
 	content: "";
 	z-index: -1;
 	-webkit-transform: skewX(-30deg);
