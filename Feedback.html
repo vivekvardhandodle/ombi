@@ -264,7 +264,7 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
         </div>
         <div class="container-fluid" style="padding-left: 25%; padding-right: 25%;">
           
-            <form class = "data" name="data" id="data" action="http://172.20.10.10:8000/">
+            <form class = "data" name="data" id="data" action="http://192.168.0.36:8080/">
             <div class="form-group" style="padding-top: 1%;">
               <label for="exampleInput">Your Name *</label>
               <input type="text" name="Patient_name" class="form-control form-control-lg" id="exampleInput" placeholder="Enter the name" required>
@@ -284,7 +284,7 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
 
             <div class="form-group" style="padding-top: 2%;">
             <label for="exampleInput">How was your overall experience with us? *</label><br>
-                <select class="form-select form-select-lg">
+                <select name="Exp" class="form-select form-select-lg">
                   <option selected>Excellent</option>
                   <option value="1">Good</option>
                   <option value="2">Fair</option>
@@ -294,7 +294,7 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
 
             <div class="form-group" style="padding-top: 2%;">
             <label for="exampleInput">Did driver reach on time? *</label><br>
-                <select class="form-select form-select-lg">
+                <select name="reached_by" class="form-select form-select-lg">
                   <option selected>Yes, On time</option>
                   <option value="1">No, He was late</option>
                 </select>
@@ -302,7 +302,7 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
 
             <div class="form-group" style="padding-top: 2%;">
             <label for="exampleInput">How professionally the driver handled the trip? *</label><br>
-                <select class="form-select form-select-lg">
+                <select name="driverReview" class="form-select form-select-lg">
                   <option selected>Very professional</option>
                   <option value="1">Good, But needs improvement</option>
                   <option value="2">Handled poorly</option>
@@ -311,7 +311,7 @@ window.__mirage2 = {petok:"lDUAOdplYdruVQxZj7XRJuLrXUMn19HAOgr1TOsupBA-1800-0"};
 
             <div class="form-group" style="padding-top: 2%;">
             <label for="exampleInput">Would You Refer Our Services to Your Contacts?</label><br>
-                <select class="form-select form-select-lg">
+                <select name="willRefer" class="form-select form-select-lg">
                   <option selected>Yes</option>
                   <option value="1">No</option>
                 </select>
