@@ -1,33 +1,17 @@
-/*  ---------------------------------------------------
-    Theme Name: Freight Broker
-    Description: Freight Broker - Template
-    Author: Colorib
-    Author URI: https://www.colorib.com/
-    Version: 1.0
-    Created: Colorib
----------------------------------------------------------  */
-
 'use strict';
 
 (function ($) {
 
-    /*------------------
-        Preloader
-    --------------------*/
     $(window).on('load', function () {
         $(".loader").fadeOut();
         $("#preloder").delay(200).fadeOut("slow");
     });
 
-    /*------------------
-        Background Set
-    --------------------*/
     $('.set-bg').each(function () {
         var bg = $(this).data('setbg');
         $(this).css('background-image', 'url(' + bg + ')');
     });
 
-    //Canvas Menu
     $(".canvas__open").on('click', function () {
         $(".offcanvas-menu-wrapper").addClass("active");
         $(".offcanvas-menu-overlay").addClass("active");
@@ -38,7 +22,6 @@
         $(".offcanvas-menu-overlay").removeClass("active");
     });
 
-    //Search Switch
     $('.search-switch').on('click', function () {
         $('.search-model').fadeIn(400);
     });
@@ -49,17 +32,11 @@
         });
     });
 
-    /*------------------
-		Navigation
-	--------------------*/
     $(".mobile-menu").slicknav({
         prependTo: '#mobile-menu-wrap',
         allowParentLinks: true
     });
 
-    /*-----------------------
-        Partner Slider
-    ------------------------*/
     $(".partner__logo__slider").owlCarousel({
         loop: true,
         margin: 140,
@@ -90,9 +67,6 @@
         }
     });
 
-    /*-----------------------
-        Projects Slider
-    ------------------------*/
     $(".projects__slider").owlCarousel({
         loop: true,
         margin: 0,
@@ -117,9 +91,6 @@
         }
     });
 
-    /*-----------------------
-        Testimonial Slider
-    ------------------------*/
     $(".testimonial__slider").owlCarousel({
         loop: true,
         margin: 0,
@@ -132,14 +103,8 @@
         autoplay: true
     });
 
-    /*--------------------------
-        Select
-    ----------------------------*/
     $("select").niceSelect();
 
-    /*------------------
-        Achieve Counter
-    --------------------*/
     $('.c_num').each(function () {
         $(this).prop('Counter', 0).animate({
             Counter: $(this).text()
